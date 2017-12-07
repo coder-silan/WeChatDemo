@@ -48,6 +48,7 @@ public class EmoticonInputView: UIView {
     var selectIndex: Int = 0
     
     convenience init() {
+       // let minusHeight:CGFloat = isIphoneX ? 34 : 0
         let frame = CGRect(x: 0, y: 0, width: kSCREEN_WIDTH, height: kMoreInputViewHeight)
         self.init(frame: frame)
     }
