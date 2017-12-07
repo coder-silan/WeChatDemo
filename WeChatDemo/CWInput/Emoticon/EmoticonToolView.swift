@@ -69,30 +69,30 @@ class EmoticonToolView: UIView {
     }()
     
     // 设置
-    let settingButton: UIButton = {
-        let settingButton = UIButton(type: .custom)
-        
-        settingButton.contentEdgeInsets = UIEdgeInsetsMake(0, 10, 0, 0)
-        settingButton.setImage(UIImage(named: "EmotionsSetting"), for: .normal)
-        settingButton.setBackgroundImage(UIImage(named: "EmotionsSendBtnGrey"), for: .normal)
-        settingButton.setBackgroundImage(UIImage(named: "EmotionsSendBtnGrey"), for: .highlighted)
+//    let settingButton: UIButton = {
+//        let settingButton = UIButton(type: .custom)
+//
+//        settingButton.contentEdgeInsets = UIEdgeInsetsMake(0, 10, 0, 0)
+//        settingButton.setImage(UIImage(named: "EmotionsSetting"), for: .normal)
+//        settingButton.setBackgroundImage(UIImage(named: "EmotionsSendBtnGrey"), for: .normal)
+//        settingButton.setBackgroundImage(UIImage(named: "EmotionsSendBtnGrey"), for: .highlighted)
+//
+//        return settingButton
+//    }()
     
-        return settingButton
-    }()
-    
-    lazy var addButton: UIButton = {
-        let addButton = UIButton(type: .custom)
-        addButton.setImage(UIImage(named: "EmotionsBagAdd"), for: .normal)
-        addButton.frame = CGRect(x: 0, y: 0, width: kItemWidth, height: self.height)
-
-        // 添加一条线
-        let line: CALayer = CALayer()
-        line.backgroundColor = UIColor(white: 0.9, alpha: 1.0).cgColor
-        line.frame = CGRect(x: kItemWidth-0.5, y: 8, width: 0.5, height: self.height - 2*8)
-        addButton.layer.addSublayer(line)
-        
-        return addButton
-    }()
+//    lazy var addButton: UIButton = {
+//        let addButton = UIButton(type: .custom)
+//        addButton.setImage(UIImage(named: "EmotionsBagAdd"), for: .normal)
+//        addButton.frame = CGRect(x: 0, y: 0, width: kItemWidth, height: self.height)
+//
+//        // 添加一条线
+//        let line: CALayer = CALayer()
+//        line.backgroundColor = UIColor(white: 0.9, alpha: 1.0).cgColor
+//        line.frame = CGRect(x: kItemWidth-0.5, y: 8, width: 0.5, height: self.height - 2*8)
+//        addButton.layer.addSublayer(line)
+//
+//        return addButton
+//    }()
     
     func loadData(_ groupList: [EmoticonGroup]) {
         if groupList == self.groupList {
@@ -109,17 +109,12 @@ class EmoticonToolView: UIView {
         super.init(frame: frame)
         
         self.backgroundColor = UIColor.white
-        self.addSubview(addButton)
         self.addSubview(collectionView)
-        
         self.addSubview(sendButton)
-        self.addSubview(settingButton)
-        
-        collectionView.frame = CGRect(x: addButton.right, y: 0, width: self.width-kItemWidth, height: self.height)
+        collectionView.frame = CGRect(x: 0, y: 0, width: self.width-kItemWidth, height: self.height)
         
         let buttonWidth: CGFloat = 52
         sendButton.frame = CGRect(x: self.width-buttonWidth, y: 0, width: buttonWidth, height: self.height)
-        settingButton.frame = CGRect(x: self.width, y: 0, width: buttonWidth, height: self.height)
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -160,7 +155,7 @@ extension EmoticonToolView: UICollectionViewDelegate {
         // 是一个 显示发送按钮
         if showSendButton {
             UIView.animate(withDuration: kDurationTime, delay: 0, options: .curveEaseInOut, animations: { 
-                self.settingButton.left = self.width
+               // self.settingButton.left = self.width
             }, completion: { (finshed) in
                 UIView.animate(withDuration: kDurationTime, delay: 0, options: .curveEaseInOut, animations: { 
                     self.sendButton.left = self.width-self.sendButton.width            
@@ -173,7 +168,7 @@ extension EmoticonToolView: UICollectionViewDelegate {
                 self.sendButton.left = self.width            
             }, completion: { (finshed) in
                 UIView.animate(withDuration: kDurationTime, delay: 0, options: .curveEaseInOut, animations: { 
-                    self.settingButton.left = self.width-self.settingButton.width            
+                 //   self.settingButton.left = self.width-self.settingButton.width            
                 }, completion: { (finshed) in
                     
                 })

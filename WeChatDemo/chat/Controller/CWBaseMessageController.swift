@@ -146,9 +146,7 @@ extension CWBaseMessageController: UICollectionViewDataSource, UICollectionViewD
         self.view.endEditing(true)
         keyboard.keyboardDown()
     }
-    
 }
-
 
 extension CWBaseMessageController: CWMessageCellDelegate {
     

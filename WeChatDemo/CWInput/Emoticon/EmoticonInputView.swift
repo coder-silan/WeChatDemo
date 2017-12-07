@@ -23,8 +23,8 @@ struct EmoticonGroupInfo {
     }
 }
 
-private let kEmoticonHeight: CGFloat = kTabBarHeight + 1
-private let kToolViewHeight: CGFloat = kTabBarHeight - 12
+private let kEmoticonHeight: CGFloat = 50
+private let kToolViewHeight: CGFloat = 37
 public protocol EmoticonInputViewDelegate: class {
     
     func emoticonInputView(_ inputView: EmoticonInputView, didSelect emoticon: Emoticon)
@@ -93,7 +93,7 @@ public class EmoticonInputView: UIView {
     }
     
     func setupToolView() {
-        let frame = CGRect(x: 0, y: self.height - kToolViewHeight, width: self.bounds.width, height: kToolViewHeight)
+        let frame = CGRect(x: 0, y: pageControl.bottom, width: self.bounds.width, height: kToolViewHeight)
         toolView = EmoticonToolView(frame: frame)
         toolView.delegate = self
         self.addSubview(toolView)
