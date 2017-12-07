@@ -57,7 +57,6 @@
 		2E9469421FD8DDD30000DC20 /* CWChatKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9469281FD8DDD30000DC20 /* CWChatKeyboard.swift */; };
 		2E9469431FD8DDD30000DC20 /* CWChatToolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9469291FD8DDD30000DC20 /* CWChatToolBar.swift */; };
 		2E9469441FD8DDD30000DC20 /* CWInputTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E94692A1FD8DDD30000DC20 /* CWInputTextView.swift */; };
-		2E9469451FD8DDD30000DC20 /* CWRecordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E94692B1FD8DDD30000DC20 /* CWRecordButton.swift */; };
 		2E9469461FD8DDD30000DC20 /* EmoticonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E94692D1FD8DDD30000DC20 /* EmoticonCell.swift */; };
 		2E9469471FD8DDD30000DC20 /* EmoticonGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E94692E1FD8DDD30000DC20 /* EmoticonGroup.swift */; };
 		2E9469481FD8DDD30000DC20 /* EmoticonInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E94692F1FD8DDD30000DC20 /* EmoticonInputView.swift */; };
@@ -162,7 +161,6 @@
 		2E9469281FD8DDD30000DC20 /* CWChatKeyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CWChatKeyboard.swift; sourceTree = "<group>"; };
 		2E9469291FD8DDD30000DC20 /* CWChatToolBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CWChatToolBar.swift; sourceTree = "<group>"; };
 		2E94692A1FD8DDD30000DC20 /* CWInputTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CWInputTextView.swift; sourceTree = "<group>"; };
-		2E94692B1FD8DDD30000DC20 /* CWRecordButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CWRecordButton.swift; sourceTree = "<group>"; };
 		2E94692D1FD8DDD30000DC20 /* EmoticonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonCell.swift; sourceTree = "<group>"; };
 		2E94692E1FD8DDD30000DC20 /* EmoticonGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonGroup.swift; sourceTree = "<group>"; };
 		2E94692F1FD8DDD30000DC20 /* EmoticonInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonInputView.swift; sourceTree = "<group>"; };
@@ -284,6 +282,7 @@
 		2E54943F1FD8CC6500DB934B /* chat */ = {
 			isa = PBXGroup;
 			children = (
+				2E9469841FD8DE760000DC20 /* CWBaseTableViewController.swift */,
 				2E9469881FD8E52A0000DC20 /* CWChatKit.swift */,
 				2E5494911FD8D44800DB934B /* tool */,
 				2E5494431FD8CC8E00DB934B /* Controller */,
@@ -408,7 +407,6 @@
 				2E9469281FD8DDD30000DC20 /* CWChatKeyboard.swift */,
 				2E9469291FD8DDD30000DC20 /* CWChatToolBar.swift */,
 				2E94692A1FD8DDD30000DC20 /* CWInputTextView.swift */,
-				2E94692B1FD8DDD30000DC20 /* CWRecordButton.swift */,
 			);
 			path = ChatToolBar;
 			sourceTree = "<group>";
@@ -416,6 +414,8 @@
 		2E94692C1FD8DDD30000DC20 /* Emoticon */ = {
 			isa = PBXGroup;
 			children = (
+				2E94695F1FD8DE110000DC20 /* Emoticon.swift */,
+				2E9469621FD8DE110000DC20 /* EmoticonManager.swift */,
 				2E94692D1FD8DDD30000DC20 /* EmoticonCell.swift */,
 				2E94692E1FD8DDD30000DC20 /* EmoticonGroup.swift */,
 				2E94692F1FD8DDD30000DC20 /* EmoticonInputView.swift */,
@@ -456,27 +456,8 @@
 			children = (
 				2E9469801FD8DE340000DC20 /* emoticons.bundle */,
 				2E9469821FD8DE3B0000DC20 /* Emotion.bundle */,
-				2E9469841FD8DE760000DC20 /* CWBaseTableViewController.swift */,
-				2E94695E1FD8DE110000DC20 /* Model */,
-				2E9469611FD8DE110000DC20 /* Service */,
 			);
 			path = Expression;
-			sourceTree = "<group>";
-		};
-		2E94695E1FD8DE110000DC20 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				2E94695F1FD8DE110000DC20 /* Emoticon.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		2E9469611FD8DE110000DC20 /* Service */ = {
-			isa = PBXGroup;
-			children = (
-				2E9469621FD8DE110000DC20 /* EmoticonManager.swift */,
-			);
-			path = Service;
 			sourceTree = "<group>";
 		};
 		556F47192EE61446A04B7B22 /* Pods */ = {
@@ -686,7 +667,6 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-WeChatDemo/Pods-WeChatDemo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/CWActionSheet/CWActionSheet.framework",
-				"${BUILT_PRODUCTS_DIR}/FSPagerView/FSPagerView.framework",
 				"${BUILT_PRODUCTS_DIR}/Hue/Hue.framework",
 				"${BUILT_PRODUCTS_DIR}/KVOController/KVOController.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
@@ -702,7 +682,6 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CWActionSheet.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FSPagerView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hue.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KVOController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
@@ -842,7 +821,6 @@
 				2E54948C1FD8D30F00DB934B /* CWChatImageView.swift in Sources */,
 				2E5494651FD8CD3B00DB934B /* CWUIUtility.swift in Sources */,
 				2E5494691FD8CDD800DB934B /* CWMessage.swift in Sources */,
-				2E9469451FD8DDD30000DC20 /* CWRecordButton.swift in Sources */,
 				2E5494641FD8CD3B00DB934B /* CWPlayMessageAudio.swift in Sources */,
 				2E5494521FD8CCF300DB934B /* NSString+PinYin.swift in Sources */,
 				2E9469731FD8DE110000DC20 /* Emoticon.swift in Sources */,

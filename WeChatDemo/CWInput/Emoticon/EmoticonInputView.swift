@@ -23,9 +23,8 @@ struct EmoticonGroupInfo {
     }
 }
 
-private let kEmoticonHeight: CGFloat = 50
-private let kToolViewHeight: CGFloat = 37
-
+private let kEmoticonHeight: CGFloat = kTabBarHeight + 1
+private let kToolViewHeight: CGFloat = kTabBarHeight - 12
 public protocol EmoticonInputViewDelegate: class {
     
     func emoticonInputView(_ inputView: EmoticonInputView, didSelect emoticon: Emoticon)

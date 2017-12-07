@@ -17,7 +17,6 @@ target 'WeChatDemo' do
   pod 'SwiftyBeaver'
   
   pod 'CWActionSheet'
-  pod 'FSPagerView'
   # tool
   pod 'Hue'
   pod 'SwiftyJSON'

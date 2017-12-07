@@ -20,8 +20,8 @@ enum KeyboardType {
     case comment
 }
 
-private let kInputViewHeight: CGFloat = 216
-private let kToolViewHeight: CGFloat = 49
+private let kInputViewHeight: CGFloat =  isIphoneX ? 291.0 : 216.0
+private let kToolViewHeight: CGFloat = isIphoneX ? 49.0 + 34.0 : 49.0
 
 class Keyboard: UIView {
     
@@ -112,7 +112,6 @@ class Keyboard: UIView {
         
         let userInfo = notification.userInfo!
         let endFrameValue = userInfo[UIKeyboardFrameEndUserInfoKey] as! NSValue
-       // let beginFrameValue = userInfo[UIKeyboardFrameBeginUserInfoKey] as! NSValue
 
         self.keyBoardFrameTop = endFrameValue.cgRectValue.minY
     }
@@ -121,7 +120,6 @@ class Keyboard: UIView {
         
         let userInfo = notification.userInfo!
         let endFrameValue = userInfo[UIKeyboardFrameEndUserInfoKey] as! NSValue
-       // let beginFrameValue = userInfo[UIKeyboardFrameBeginUserInfoKey] as! NSValue
         
         UIView.animate(withDuration: 0.25) {
             self.top = endFrameValue.cgRectValue.minY - kToolViewHeight

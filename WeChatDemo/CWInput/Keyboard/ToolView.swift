@@ -113,14 +113,7 @@ class ToolView: UIView {
         let toolBarHeight = self.height
         
         let kItem: CGFloat = 42
-        let buttonSize = CGSize(width: kItem, height: 49)
-        
-//        if self.allowVoice {
-//            let origin = CGPoint(x: 0, y: toolBarHeight-buttonSize.height)
-//            voiceButton.frame = CGRect(origin: origin, size: buttonSize)
-//        } else {
-//            voiceButton.frame = CGRect.zero
-//        }
+        let buttonSize = CGSize(width: kItem, height: kTabBarHeight)
         
         if self.allowMoreView {
             let origin = CGPoint(x: self.bounds.width-buttonSize.width, y: toolBarHeight-buttonSize.height)
@@ -138,13 +131,8 @@ class ToolView: UIView {
         
         let textViewWidth = emoticonButton.left
         
-//        if textViewX == 0 {
-//            textViewX = 8
-//            //textViewWidth -= textViewX
-//        }
-        
         let height: CGFloat = 36
-        inputTextView.frame = CGRect(x: 10, y: (49 - height)/2.0,
+        inputTextView.frame = CGRect(x: 10, y: (kTabBarHeight - height)/2.0,
                                      width: textViewWidth, height: height)
         
     }

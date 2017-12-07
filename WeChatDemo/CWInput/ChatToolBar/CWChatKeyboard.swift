@@ -35,8 +35,6 @@ public class CWChatKeyboard: UIView {
     /// 风格
     var keyboardStyle: CWChatKeyboardStyle = .chat
     
-    /// 是否开启语言
-    //var allowVoice: Bool = false
     /// 是否开启表情
     var allowFace: Bool = true
     /// 是否开启更多功能

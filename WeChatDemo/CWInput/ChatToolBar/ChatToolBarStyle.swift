@@ -31,7 +31,7 @@ public enum CWMoreItemType: Int {
 }
 
 
-let kMoreInputViewHeight: CGFloat = 216
+let kMoreInputViewHeight: CGFloat =  isIphoneX ? 291.0 : 216.0
 
 let kChatKeyboardHeight = kMoreInputViewHeight + kTabBarHeight
 

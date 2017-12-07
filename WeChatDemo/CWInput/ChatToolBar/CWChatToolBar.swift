@@ -86,10 +86,8 @@ public class CWChatToolBar: UIView {
         self.autoresizingMask = [UIViewAutoresizing.flexibleWidth,UIViewAutoresizing.flexibleTopMargin]
         self.backgroundColor = UIColor.white
         
-     //   addSubview(self.voiceButton)
         addSubview(self.emoticonButton)
         addSubview(self.moreButton)
-    //    addSubview(self.recordButton)
         addSubview(self.inputTextView)
         
         setupFrame()
@@ -102,13 +100,6 @@ public class CWChatToolBar: UIView {
         
         let kItem: CGFloat = 42
         let buttonSize = CGSize(width: kItem, height: kTabBarHeight)
-       
-//        if self.allowVoice {
-//            let origin = CGPoint(x: 0, y: toolBarHeight-buttonSize.height)
-//            voiceButton.frame = CGRect(origin: origin, size: buttonSize)
-//        } else {
-//            voiceButton.frame = CGRect.zero
-//        }
         
         if self.allowMoreView {
             let origin = CGPoint(x: kSCREEN_WIDTH-buttonSize.width, y: toolBarHeight-buttonSize.height)
@@ -127,15 +118,9 @@ public class CWChatToolBar: UIView {
         let textViewX = 10.0
         let textViewWidth = emoticonButton.left - 15
         
-//        if textViewX == 0 {
-//            textViewX = 8
-//            textViewWidth -= textViewX
-//        }
-        
         let height = self.textViewLineHeight()
         inputTextView.frame = CGRect(x: CGFloat(textViewX), y: (kTabBarHeight - height)/2.0,
                                      width: textViewWidth, height: height)
-      //  recordButton.frame = inputTextView.frame
     }
     
     
@@ -163,10 +148,7 @@ public class CWChatToolBar: UIView {
     }
     
     func endInputing() {
-//        if voiceButton.isSelected {
-//            return
-//        }
-//        voiceButton.isSelected = false
+
         emoticonButton.isSelected = false
         moreButton.isSelected = false
 
@@ -181,7 +163,6 @@ public class CWChatToolBar: UIView {
     }
 
     @objc func handelVoiceClick(_ sender: UIButton) {
-       // self.voiceButton.isSelected = !self.voiceButton.isSelected
         self.emoticonButton.isSelected = false
         self.moreButton.isSelected = false
 
@@ -198,7 +179,6 @@ public class CWChatToolBar: UIView {
         }
         
         UIView.animate(withDuration: 0.2) { 
-          //  self.recordButton.isHidden = !sender.isSelected
             self.inputTextView.isHidden = sender.isSelected
         }
         self.delegate?.chatToolBar(self, voiceButtonPressed: sender.isSelected, keyBoardState: keyBoardChanged)
@@ -206,7 +186,6 @@ public class CWChatToolBar: UIView {
     
     @objc func handelEmotionClick(_ sender: UIButton) {
         self.emoticonButton.isSelected = !self.emoticonButton.isSelected
-      //  self.voiceButton.isSelected = false
         self.moreButton.isSelected = false
         
         var keyBoardChanged = true
@@ -222,7 +201,6 @@ public class CWChatToolBar: UIView {
         self.resumeTextViewContentSize()
 
         UIView.animate(withDuration: 0.2) {
-        //    self.recordButton.isHidden = true
             self.inputTextView.isHidden = false
         }
         self.delegate?.chatToolBar(self, emoticonButtonPressed: sender.isSelected, keyBoardState: keyBoardChanged)
@@ -231,7 +209,6 @@ public class CWChatToolBar: UIView {
     
     @objc func handelMoreClick(_ sender: UIButton) {
         self.moreButton.isSelected = !self.moreButton.isSelected
-       // self.voiceButton.isSelected = false
         self.emoticonButton.isSelected = false
         
         var keyBoardChanged = true
@@ -247,7 +224,6 @@ public class CWChatToolBar: UIView {
         self.resumeTextViewContentSize()
         
         UIView.animate(withDuration: 0.2) {
-        //    self.recordButton.isHidden = true
             self.inputTextView.isHidden = false
         }
         self.delegate?.chatToolBar(self, moreButtonPressed: sender.isSelected, keyBoardState: keyBoardChanged)

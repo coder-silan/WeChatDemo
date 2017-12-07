@@ -18,8 +18,8 @@ class InputTextView: UITextView {
                 return
             }
             
-            if placeHolder.characters.count > maxChars {
-                let index = placeHolder.characters.index(placeHolder.startIndex, offsetBy: -8)
+            if placeHolder.count > maxChars {
+                let index = placeHolder.index(placeHolder.startIndex, offsetBy: -8)
                 placeHolder = String(placeHolder[..<index])
                 self.placeHolder = placeHolder + "..."
             }
