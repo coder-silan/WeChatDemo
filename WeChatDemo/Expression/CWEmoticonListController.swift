@@ -45,7 +45,7 @@ class CWEmoticonListController: UIViewController {
         segmentedControl.addTarget(self, action: #selector(segmentedControlChanged(_:)), for: .valueChanged)
         self.navigationItem.titleView = self.segmentedControl
         
-        rightBarButtonItem = UIBarButtonItem(image: CWAsset.Nav_setting.image, style: .plain,target: self, action: #selector(rightBarButtonDown))        
+        //rightBarButtonItem = UIBarButtonItem(image: CWAsset.Nav_setting.image, style: .plain,target: self, action: #selector(rightBarButtonDown))        
         self.navigationItem.rightBarButtonItem = self.rightBarButtonItem
 
         //模态视图需要添加取消

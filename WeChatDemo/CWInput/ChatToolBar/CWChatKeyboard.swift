@@ -36,7 +36,7 @@ public class CWChatKeyboard: UIView {
     var keyboardStyle: CWChatKeyboardStyle = .chat
     
     /// 是否开启语言
-    var allowVoice: Bool = true
+    //var allowVoice: Bool = false
     /// 是否开启表情
     var allowFace: Bool = true
     /// 是否开启更多功能
@@ -156,11 +156,8 @@ public class CWChatKeyboard: UIView {
                     if self.keyboardStyle == .chat {
                         self.y = targetY
                     } else {
-                        if self.chatToolBar.voiceSelected {
-                            self.y = targetY
-                        } else {
-                            self.y = self.superview!.height
-                        }
+                       
+                        self.y = self.superview!.height
                     }
                     self.updateAssociateTableViewFrame()
                 }

@@ -74,10 +74,10 @@ class TextMessageContentView: MessageContentView {
         }
         
         if let phone = info[kChatTextKeyPhone] as? String {
-          //  delegate.messageCellDidTapPhone(self, phone: phone)
+            //delegate.messageCellDidTapPhone(self, phone: phone)
         }
         else if let URLString = info[kChatTextKeyURL] as? String, let URL = URL(string: URLString) {
-          //  delegate.messageCellDidTapLink(self, link: URL)
+            //delegate.messageCellDidTapLink(self, link: URL)
         }
     }
     

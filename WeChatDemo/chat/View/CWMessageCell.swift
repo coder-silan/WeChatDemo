@@ -120,7 +120,7 @@ class CWMessageCell: UICollectionViewCell {
     /// 发送失败按钮
     lazy var errorButton:UIButton = {
         let errorButton = UIButton(type: .custom)
-        errorButton.setImage(CWAsset.MessageSendFail.image, for: UIControlState())
+        //errorButton.setImage(CWAsset.MessageSendFail.image, for: UIControlState())
         errorButton.sizeToFit()
         errorButton.addTarget(self, action: #selector(errorButtonClick(_:)), for: .touchUpInside)
         errorButton.isHidden = true
@@ -161,9 +161,9 @@ class CWMessageCell: UICollectionViewCell {
         updateState()
         // 赋值
         let userId = message.targetId
-        //let avatarURL = "\(kImageBaseURLString)\(userId).jpg"
-        //avatarImageView.kf.setImage(with: URL(string: avatarURL), placeholder: defaultHeadeImage)
-        avatarImageView.backgroundColor = UIColor.red
+        let avatarURL = "\(kImageBaseURLString)\(userId).jpg"
+        avatarImageView.kf.setImage(with: URL(string: avatarURL), placeholder: defaultHeadeImage)
+        //avatarImageView.backgroundColor = UIColor.red
     
         self.messageContentView.refresh(message: message)
     }
@@ -187,9 +187,9 @@ class CWMessageCell: UICollectionViewCell {
             // 如果失败就显示重发按钮
         else if message.sendStatus == .failed {
             activityView.stopAnimating()
-            errorButton.isHidden = false
+            errorButton.isHidden = true
         } else {
-            activityView.startAnimating()
+            //activityView.startAnimating()
             errorButton.isHidden = true
         }
     }

@@ -84,7 +84,7 @@ class Keyboard: UIView {
         self.addSubview(moreInputView)
 
         toolView.emoticonButton.addTarget(self, action: #selector(handelEmotionClick(_:)), for: .touchUpInside)
-        toolView.voiceButton.addTarget(self, action: #selector(handelVoiceClick(_:)), for: .touchUpInside)
+       // toolView.voiceButton.addTarget(self, action: #selector(handelVoiceClick(_:)), for: .touchUpInside)
         toolView.moreButton.addTarget(self, action: #selector(handelMoreClick(_:)), for: .touchUpInside)        
         
         NotificationCenter.default.addObserver(self,
@@ -159,9 +159,9 @@ class Keyboard: UIView {
     }
     
     // MARK: Action
-    @objc func handelVoiceClick(_ sender: UIButton) {
-        
-    }
+//    @objc func handelVoiceClick(_ sender: UIButton) {
+//
+//    }
     
     @objc func handelEmotionClick(_ sender: UIButton) {
         

@@ -17,14 +17,11 @@
 		2E5493581FD7F91400DB934B /* WeChatDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5493571FD7F91400DB934B /* WeChatDemoUITests.swift */; };
 		2E5494511FD8CCF300DB934B /* NSString+Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5494451FD8CCF300DB934B /* NSString+Chat.swift */; };
 		2E5494521FD8CCF300DB934B /* NSString+PinYin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5494461FD8CCF300DB934B /* NSString+PinYin.swift */; };
-		2E5494531FD8CCF300DB934B /* UIApplication+CWChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5494471FD8CCF300DB934B /* UIApplication+CWChat.swift */; };
-		2E5494541FD8CCF300DB934B /* UIBarButtonItem+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5494481FD8CCF300DB934B /* UIBarButtonItem+Extensions.swift */; };
 		2E5494551FD8CCF300DB934B /* UIButton+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5494491FD8CCF300DB934B /* UIButton+Extensions.swift */; };
 		2E5494561FD8CCF300DB934B /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E54944A1FD8CCF300DB934B /* UIColor+Extension.swift */; };
 		2E5494571FD8CCF300DB934B /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E54944B1FD8CCF300DB934B /* UIFont+Extension.swift */; };
 		2E5494581FD8CCF300DB934B /* UIImage+CWChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E54944C1FD8CCF300DB934B /* UIImage+CWChat.swift */; };
 		2E5494591FD8CCF300DB934B /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E54944D1FD8CCF300DB934B /* UIImage+Extension.swift */; };
-		2E54945A1FD8CCF300DB934B /* UIStoryboard+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E54944E1FD8CCF300DB934B /* UIStoryboard+Extension.swift */; };
 		2E54945B1FD8CCF300DB934B /* UITableView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E54944F1FD8CCF300DB934B /* UITableView+Reusable.swift */; };
 		2E54945C1FD8CCF300DB934B /* UIView+Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5494501FD8CCF300DB934B /* UIView+Frame.swift */; };
 		2E5494621FD8CD3B00DB934B /* ChatTimeTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E54945E1FD8CD3B00DB934B /* ChatTimeTool.swift */; };
@@ -142,14 +139,11 @@
 		2E5493591FD7F91400DB934B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E5494451FD8CCF300DB934B /* NSString+Chat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSString+Chat.swift"; sourceTree = "<group>"; };
 		2E5494461FD8CCF300DB934B /* NSString+PinYin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSString+PinYin.swift"; sourceTree = "<group>"; };
-		2E5494471FD8CCF300DB934B /* UIApplication+CWChat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+CWChat.swift"; sourceTree = "<group>"; };
-		2E5494481FD8CCF300DB934B /* UIBarButtonItem+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extensions.swift"; sourceTree = "<group>"; };
 		2E5494491FD8CCF300DB934B /* UIButton+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Extensions.swift"; sourceTree = "<group>"; };
 		2E54944A1FD8CCF300DB934B /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		2E54944B1FD8CCF300DB934B /* UIFont+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
 		2E54944C1FD8CCF300DB934B /* UIImage+CWChat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+CWChat.swift"; sourceTree = "<group>"; };
 		2E54944D1FD8CCF300DB934B /* UIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
-		2E54944E1FD8CCF300DB934B /* UIStoryboard+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Extension.swift"; sourceTree = "<group>"; };
 		2E54944F1FD8CCF300DB934B /* UITableView+Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Reusable.swift"; sourceTree = "<group>"; };
 		2E5494501FD8CCF300DB934B /* UIView+Frame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Frame.swift"; sourceTree = "<group>"; };
 		2E54945E1FD8CD3B00DB934B /* ChatTimeTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatTimeTool.swift; sourceTree = "<group>"; };
@@ -389,14 +383,11 @@
 			children = (
 				2E5494451FD8CCF300DB934B /* NSString+Chat.swift */,
 				2E5494461FD8CCF300DB934B /* NSString+PinYin.swift */,
-				2E5494471FD8CCF300DB934B /* UIApplication+CWChat.swift */,
-				2E5494481FD8CCF300DB934B /* UIBarButtonItem+Extensions.swift */,
 				2E5494491FD8CCF300DB934B /* UIButton+Extensions.swift */,
 				2E54944A1FD8CCF300DB934B /* UIColor+Extension.swift */,
 				2E54944B1FD8CCF300DB934B /* UIFont+Extension.swift */,
 				2E54944C1FD8CCF300DB934B /* UIImage+CWChat.swift */,
 				2E54944D1FD8CCF300DB934B /* UIImage+Extension.swift */,
-				2E54944E1FD8CCF300DB934B /* UIStoryboard+Extension.swift */,
 				2E54944F1FD8CCF300DB934B /* UITableView+Reusable.swift */,
 				2E5494501FD8CCF300DB934B /* UIView+Frame.swift */,
 			);
@@ -905,7 +896,6 @@
 				2E9469441FD8DDD30000DC20 /* CWInputTextView.swift in Sources */,
 				2E9469481FD8DDD30000DC20 /* EmoticonInputView.swift in Sources */,
 				2E9469741FD8DE110000DC20 /* EmoticonPackage.swift in Sources */,
-				2E5494541FD8CCF300DB934B /* UIBarButtonItem+Extensions.swift in Sources */,
 				2E5494551FD8CCF300DB934B /* UIButton+Extensions.swift in Sources */,
 				2E94694D1FD8DDD30000DC20 /* EmoticonToolView.swift in Sources */,
 				2E9469571FD8DDD30000DC20 /* MoreItemCell.swift in Sources */,
@@ -913,11 +903,9 @@
 				2E54945B1FD8CCF300DB934B /* UITableView+Reusable.swift in Sources */,
 				2E9469531FD8DDD30000DC20 /* MoreInputDataHelper.swift in Sources */,
 				2E5494931FD8D45100DB934B /* CWTextLinePositionModifier.swift in Sources */,
-				2E54945A1FD8CCF300DB934B /* UIStoryboard+Extension.swift in Sources */,
 				2E54945C1FD8CCF300DB934B /* UIView+Frame.swift in Sources */,
 				2E9469561FD8DDD30000DC20 /* MoreItem.swift in Sources */,
 				2E94697F1FD8DE110000DC20 /* MyEmoticonCell.swift in Sources */,
-				2E5494531FD8CCF300DB934B /* UIApplication+CWChat.swift in Sources */,
 				2E94694C1FD8DDD30000DC20 /* EmoticonToolItemCell.swift in Sources */,
 				2E9469781FD8DE110000DC20 /* EmoticonDetailFooterView.swift in Sources */,
 				2E94697A1FD8DE110000DC20 /* EmoticonListBannerCell.swift in Sources */,
