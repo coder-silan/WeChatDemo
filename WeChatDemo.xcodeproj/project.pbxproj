@@ -75,24 +75,8 @@
 		2E9469551FD8DDD30000DC20 /* MoreInputViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E94693E1FD8DDD30000DC20 /* MoreInputViewLayout.swift */; };
 		2E9469561FD8DDD30000DC20 /* MoreItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E94693F1FD8DDD30000DC20 /* MoreItem.swift */; };
 		2E9469571FD8DDD30000DC20 /* MoreItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9469401FD8DDD30000DC20 /* MoreItemCell.swift */; };
-		2E94696E1FD8DE110000DC20 /* CWEmoticonDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9469591FD8DE110000DC20 /* CWEmoticonDetailController.swift */; };
-		2E94696F1FD8DE110000DC20 /* CWEmoticonListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E94695A1FD8DE110000DC20 /* CWEmoticonListController.swift */; };
-		2E9469701FD8DE110000DC20 /* CWFeaturedEmoticonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E94695B1FD8DE110000DC20 /* CWFeaturedEmoticonController.swift */; };
-		2E9469711FD8DE110000DC20 /* CWMoreEmoticonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E94695C1FD8DE110000DC20 /* CWMoreEmoticonController.swift */; };
-		2E9469721FD8DE110000DC20 /* CWMyEmoticonListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E94695D1FD8DE110000DC20 /* CWMyEmoticonListController.swift */; };
 		2E9469731FD8DE110000DC20 /* Emoticon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E94695F1FD8DE110000DC20 /* Emoticon.swift */; };
-		2E9469741FD8DE110000DC20 /* EmoticonPackage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9469601FD8DE110000DC20 /* EmoticonPackage.swift */; };
 		2E9469751FD8DE110000DC20 /* EmoticonManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9469621FD8DE110000DC20 /* EmoticonManager.swift */; };
-		2E9469761FD8DE110000DC20 /* EmoticonService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9469631FD8DE110000DC20 /* EmoticonService.swift */; };
-		2E9469771FD8DE110000DC20 /* EmoticonDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9469651FD8DE110000DC20 /* EmoticonDetailCell.swift */; };
-		2E9469781FD8DE110000DC20 /* EmoticonDetailFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9469661FD8DE110000DC20 /* EmoticonDetailFooterView.swift */; };
-		2E9469791FD8DE110000DC20 /* EmoticonDetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9469671FD8DE110000DC20 /* EmoticonDetailHeaderView.swift */; };
-		2E94697A1FD8DE110000DC20 /* EmoticonListBannerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9469681FD8DE110000DC20 /* EmoticonListBannerCell.swift */; };
-		2E94697B1FD8DE110000DC20 /* EmoticonListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9469691FD8DE110000DC20 /* EmoticonListCell.swift */; };
-		2E94697C1FD8DE110000DC20 /* EmoticonListHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E94696A1FD8DE110000DC20 /* EmoticonListHeaderView.swift */; };
-		2E94697D1FD8DE110000DC20 /* MoreEmoticonBannerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E94696B1FD8DE110000DC20 /* MoreEmoticonBannerCell.swift */; };
-		2E94697E1FD8DE110000DC20 /* MoreEmoticonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E94696C1FD8DE110000DC20 /* MoreEmoticonCell.swift */; };
-		2E94697F1FD8DE110000DC20 /* MyEmoticonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E94696D1FD8DE110000DC20 /* MyEmoticonCell.swift */; };
 		2E9469811FD8DE340000DC20 /* emoticons.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2E9469801FD8DE340000DC20 /* emoticons.bundle */; };
 		2E9469831FD8DE3B0000DC20 /* Emotion.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2E9469821FD8DE3B0000DC20 /* Emotion.bundle */; };
 		2E9469851FD8DE760000DC20 /* CWBaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9469841FD8DE760000DC20 /* CWBaseTableViewController.swift */; };
@@ -196,24 +180,8 @@
 		2E94693E1FD8DDD30000DC20 /* MoreInputViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreInputViewLayout.swift; sourceTree = "<group>"; };
 		2E94693F1FD8DDD30000DC20 /* MoreItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreItem.swift; sourceTree = "<group>"; };
 		2E9469401FD8DDD30000DC20 /* MoreItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreItemCell.swift; sourceTree = "<group>"; };
-		2E9469591FD8DE110000DC20 /* CWEmoticonDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CWEmoticonDetailController.swift; sourceTree = "<group>"; };
-		2E94695A1FD8DE110000DC20 /* CWEmoticonListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CWEmoticonListController.swift; sourceTree = "<group>"; };
-		2E94695B1FD8DE110000DC20 /* CWFeaturedEmoticonController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CWFeaturedEmoticonController.swift; sourceTree = "<group>"; };
-		2E94695C1FD8DE110000DC20 /* CWMoreEmoticonController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CWMoreEmoticonController.swift; sourceTree = "<group>"; };
-		2E94695D1FD8DE110000DC20 /* CWMyEmoticonListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CWMyEmoticonListController.swift; sourceTree = "<group>"; };
 		2E94695F1FD8DE110000DC20 /* Emoticon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Emoticon.swift; sourceTree = "<group>"; };
-		2E9469601FD8DE110000DC20 /* EmoticonPackage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonPackage.swift; sourceTree = "<group>"; };
 		2E9469621FD8DE110000DC20 /* EmoticonManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonManager.swift; sourceTree = "<group>"; };
-		2E9469631FD8DE110000DC20 /* EmoticonService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonService.swift; sourceTree = "<group>"; };
-		2E9469651FD8DE110000DC20 /* EmoticonDetailCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonDetailCell.swift; sourceTree = "<group>"; };
-		2E9469661FD8DE110000DC20 /* EmoticonDetailFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonDetailFooterView.swift; sourceTree = "<group>"; };
-		2E9469671FD8DE110000DC20 /* EmoticonDetailHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonDetailHeaderView.swift; sourceTree = "<group>"; };
-		2E9469681FD8DE110000DC20 /* EmoticonListBannerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonListBannerCell.swift; sourceTree = "<group>"; };
-		2E9469691FD8DE110000DC20 /* EmoticonListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonListCell.swift; sourceTree = "<group>"; };
-		2E94696A1FD8DE110000DC20 /* EmoticonListHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonListHeaderView.swift; sourceTree = "<group>"; };
-		2E94696B1FD8DE110000DC20 /* MoreEmoticonBannerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreEmoticonBannerCell.swift; sourceTree = "<group>"; };
-		2E94696C1FD8DE110000DC20 /* MoreEmoticonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreEmoticonCell.swift; sourceTree = "<group>"; };
-		2E94696D1FD8DE110000DC20 /* MyEmoticonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyEmoticonCell.swift; sourceTree = "<group>"; };
 		2E9469801FD8DE340000DC20 /* emoticons.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = emoticons.bundle; sourceTree = "<group>"; };
 		2E9469821FD8DE3B0000DC20 /* Emotion.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Emotion.bundle; sourceTree = "<group>"; };
 		2E9469841FD8DE760000DC20 /* CWBaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CWBaseTableViewController.swift; sourceTree = "<group>"; };
@@ -488,15 +456,9 @@
 			children = (
 				2E9469801FD8DE340000DC20 /* emoticons.bundle */,
 				2E9469821FD8DE3B0000DC20 /* Emotion.bundle */,
-				2E9469591FD8DE110000DC20 /* CWEmoticonDetailController.swift */,
-				2E94695A1FD8DE110000DC20 /* CWEmoticonListController.swift */,
-				2E94695B1FD8DE110000DC20 /* CWFeaturedEmoticonController.swift */,
-				2E94695C1FD8DE110000DC20 /* CWMoreEmoticonController.swift */,
-				2E94695D1FD8DE110000DC20 /* CWMyEmoticonListController.swift */,
 				2E9469841FD8DE760000DC20 /* CWBaseTableViewController.swift */,
 				2E94695E1FD8DE110000DC20 /* Model */,
 				2E9469611FD8DE110000DC20 /* Service */,
-				2E9469641FD8DE110000DC20 /* View */,
 			);
 			path = Expression;
 			sourceTree = "<group>";
@@ -505,7 +467,6 @@
 			isa = PBXGroup;
 			children = (
 				2E94695F1FD8DE110000DC20 /* Emoticon.swift */,
-				2E9469601FD8DE110000DC20 /* EmoticonPackage.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -514,25 +475,8 @@
 			isa = PBXGroup;
 			children = (
 				2E9469621FD8DE110000DC20 /* EmoticonManager.swift */,
-				2E9469631FD8DE110000DC20 /* EmoticonService.swift */,
 			);
 			path = Service;
-			sourceTree = "<group>";
-		};
-		2E9469641FD8DE110000DC20 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				2E9469651FD8DE110000DC20 /* EmoticonDetailCell.swift */,
-				2E9469661FD8DE110000DC20 /* EmoticonDetailFooterView.swift */,
-				2E9469671FD8DE110000DC20 /* EmoticonDetailHeaderView.swift */,
-				2E9469681FD8DE110000DC20 /* EmoticonListBannerCell.swift */,
-				2E9469691FD8DE110000DC20 /* EmoticonListCell.swift */,
-				2E94696A1FD8DE110000DC20 /* EmoticonListHeaderView.swift */,
-				2E94696B1FD8DE110000DC20 /* MoreEmoticonBannerCell.swift */,
-				2E94696C1FD8DE110000DC20 /* MoreEmoticonCell.swift */,
-				2E94696D1FD8DE110000DC20 /* MyEmoticonCell.swift */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		556F47192EE61446A04B7B22 /* Pods */ = {
@@ -880,7 +824,6 @@
 			files = (
 				2E9469441FD8DDD30000DC20 /* CWInputTextView.swift in Sources */,
 				2E9469481FD8DDD30000DC20 /* EmoticonInputView.swift in Sources */,
-				2E9469741FD8DE110000DC20 /* EmoticonPackage.swift in Sources */,
 				2E5494551FD8CCF300DB934B /* UIButton+Extensions.swift in Sources */,
 				2E94694D1FD8DDD30000DC20 /* EmoticonToolView.swift in Sources */,
 				2E9469571FD8DDD30000DC20 /* MoreItemCell.swift in Sources */,
@@ -890,16 +833,12 @@
 				2E5494931FD8D45100DB934B /* CWTextLinePositionModifier.swift in Sources */,
 				2E54945C1FD8CCF300DB934B /* UIView+Frame.swift in Sources */,
 				2E9469561FD8DDD30000DC20 /* MoreItem.swift in Sources */,
-				2E94697F1FD8DE110000DC20 /* MyEmoticonCell.swift in Sources */,
 				2E94694C1FD8DDD30000DC20 /* EmoticonToolItemCell.swift in Sources */,
-				2E9469781FD8DE110000DC20 /* EmoticonDetailFooterView.swift in Sources */,
-				2E94697A1FD8DE110000DC20 /* EmoticonListBannerCell.swift in Sources */,
 				2E5494731FD8CE5700DB934B /* CWChatUser.swift in Sources */,
 				2E5494511FD8CCF300DB934B /* NSString+Chat.swift in Sources */,
 				2E94694E1FD8DDD30000DC20 /* InputTextView.swift in Sources */,
 				2E54933A1FD7F91400DB934B /* ViewController.swift in Sources */,
 				2E9469521FD8DDD30000DC20 /* CWMoreInputView.swift in Sources */,
-				2E9469711FD8DE110000DC20 /* CWMoreEmoticonController.swift in Sources */,
 				2E54948C1FD8D30F00DB934B /* CWChatImageView.swift in Sources */,
 				2E5494651FD8CD3B00DB934B /* CWUIUtility.swift in Sources */,
 				2E5494691FD8CDD800DB934B /* CWMessage.swift in Sources */,
@@ -912,9 +851,7 @@
 				2E5494801FD8D2AF00DB934B /* EmoticonMessageContentView.swift in Sources */,
 				2E5494901FD8D3D200DB934B /* CWMessageLayoutSettings.swift in Sources */,
 				2E5493381FD7F91400DB934B /* AppDelegate.swift in Sources */,
-				2E9469771FD8DE110000DC20 /* EmoticonDetailCell.swift in Sources */,
 				2E54948A1FD8D2FB00DB934B /* CWChatTextDisplayView.swift in Sources */,
-				2E9469701FD8DE110000DC20 /* CWFeaturedEmoticonController.swift in Sources */,
 				2E94694F1FD8DDD30000DC20 /* Keyboard.swift in Sources */,
 				2E9469421FD8DDD30000DC20 /* CWChatKeyboard.swift in Sources */,
 				2E54946D1FD8CE3400DB934B /* CWFileMessageBody.swift in Sources */,
@@ -924,16 +861,11 @@
 				2E9469491FD8DDD30000DC20 /* EmoticonPageCell.swift in Sources */,
 				2E5494711FD8CE5200DB934B /* CWEmoticonMessageBody.swift in Sources */,
 				2E9469411FD8DDD30000DC20 /* ChatToolBarStyle.swift in Sources */,
-				2E94696F1FD8DE110000DC20 /* CWEmoticonListController.swift in Sources */,
 				2E5494841FD8D2C700DB934B /* TextMessageContentView.swift in Sources */,
-				2E94697D1FD8DE110000DC20 /* MoreEmoticonBannerCell.swift in Sources */,
-				2E9469761FD8DE110000DC20 /* EmoticonService.swift in Sources */,
 				2E54947E1FD8D29C00DB934B /* MessageContentView.swift in Sources */,
 				2E9469851FD8DE760000DC20 /* CWBaseTableViewController.swift in Sources */,
 				2E5494821FD8D2BE00DB934B /* ImageMessageContentView.swift in Sources */,
-				2E94697C1FD8DE110000DC20 /* EmoticonListHeaderView.swift in Sources */,
 				2E9469751FD8DE110000DC20 /* EmoticonManager.swift in Sources */,
-				2E94697E1FD8DE110000DC20 /* MoreEmoticonCell.swift in Sources */,
 				2E94694B1FD8DDD30000DC20 /* EmoticonPreviewer.swift in Sources */,
 				2E5494561FD8CCF300DB934B /* UIColor+Extension.swift in Sources */,
 				2E5494951FD8D45800DB934B /* CWChatTextParser.swift in Sources */,
@@ -943,17 +875,13 @@
 				2E9469431FD8DDD30000DC20 /* CWChatToolBar.swift in Sources */,
 				2E9469551FD8DDD30000DC20 /* MoreInputViewLayout.swift in Sources */,
 				2E5494881FD8D2EC00DB934B /* CWTimeMessageCell.swift in Sources */,
-				2E9469721FD8DE110000DC20 /* CWMyEmoticonListController.swift in Sources */,
 				2E5494861FD8D2D800DB934B /* CWChatUIConstant.swift in Sources */,
 				2E5494751FD8CE7400DB934B /* CWMessageBody.swift in Sources */,
 				2E9469511FD8DDD30000DC20 /* ToolView.swift in Sources */,
-				2E94696E1FD8DE110000DC20 /* CWEmoticonDetailController.swift in Sources */,
 				2E9469891FD8E52B0000DC20 /* CWChatKit.swift in Sources */,
-				2E9469791FD8DE110000DC20 /* EmoticonDetailHeaderView.swift in Sources */,
 				2E5494671FD8CD6A00DB934B /* CWMessageModel.swift in Sources */,
 				2E5494631FD8CD3B00DB934B /* CWChatConst.swift in Sources */,
 				2E9469471FD8DDD30000DC20 /* EmoticonGroup.swift in Sources */,
-				2E94697B1FD8DE110000DC20 /* EmoticonListCell.swift in Sources */,
 				2E54948E1FD8D3CD00DB934B /* CWMessageLayoutAttributes.swift in Sources */,
 				2E5494771FD8D05A00DB934B /* CWBaseMessageController.swift in Sources */,
 				2E94694A1FD8DDD30000DC20 /* EmoticonPageCellLayout.swift in Sources */,

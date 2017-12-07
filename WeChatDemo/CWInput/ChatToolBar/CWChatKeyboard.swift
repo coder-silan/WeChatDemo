@@ -45,8 +45,8 @@ public class CWChatKeyboard: UIView {
     var lastChatKeyboardY: CGFloat = 0.0
     
     private convenience init() {
-        let frame = CGRect(x: 0, y: kScreenHeight-kChatToolBarHeight,
-                           width: kScreenWidth, height: kChatKeyboardHeight)
+        let frame = CGRect(x: 0, y: kSCREEN_HEIGHT-kTabBarHeight,
+                           width: kSCREEN_WIDTH, height: kChatKeyboardHeight)
         self.init(frame: frame)
     }
     
@@ -100,7 +100,7 @@ public class CWChatKeyboard: UIView {
                 self.emoticonInputView.isHidden = false
                 self.moreInputView.isHidden = true
                 self.frame = CGRect(x: 0, y: self.superview!.height-self.height,
-                                    width: kScreenWidth, height: self.height)
+                                    width: kSCREEN_WIDTH, height: self.height)
                 
                 self.emoticonInputView.y = self.height-kMoreInputViewHeight
                 self.moreInputView.y = self.height
@@ -116,7 +116,7 @@ public class CWChatKeyboard: UIView {
                 self.moreInputView.isHidden = false
                 self.lastChatKeyboardY = self.y
                 self.frame = CGRect(x: 0, y: self.superview!.height-self.height,
-                                    width: kScreenWidth, height: self.height)
+                                    width: kSCREEN_WIDTH, height: self.height)
                 
                 
                 self.emoticonInputView.y = self.height
@@ -139,7 +139,7 @@ public class CWChatKeyboard: UIView {
                 let duration = (notification.userInfo![UIKeyboardAnimationDurationUserInfoKey] as! NSNumber).doubleValue
                 
                 let chatToolBarHeight = self.height - kMoreInputViewHeight
-                let targetY = endFrame.minY - chatToolBarHeight - (kScreenHeight - self.superview!.height)
+                let targetY = endFrame.minY - chatToolBarHeight - (kSCREEN_HEIGHT - self.superview!.height)
                 
                 if beginFrame.height > 0 && (beginFrame.minY - endFrame.minY > 0) {
                     // 键盘弹起 (包括，第三方键盘回调三次问题，监听仅执行最后一次)
@@ -151,7 +151,7 @@ public class CWChatKeyboard: UIView {
                     self.updateAssociateTableViewFrame()
                     
                 }
-                else if (endFrame.minY == kScreenHeight && beginFrame.minY != endFrame.minY && duration > 0) {
+                else if (endFrame.minY == kSCREEN_HEIGHT && beginFrame.minY != endFrame.minY && duration > 0) {
                     self.lastChatKeyboardY = self.y
                     if self.keyboardStyle == .chat {
                         self.y = targetY
@@ -217,7 +217,7 @@ public class CWChatKeyboard: UIView {
     
     // MARK: Getter
     lazy var chatToolBar: CWChatToolBar = {
-        let frame = CGRect(x: 0, y: 0, width: kScreenWidth, height: kChatToolBarHeight)
+        let frame = CGRect(x: 0, y: 0, width: kSCREEN_WIDTH, height: kTabBarHeight)
         let chatToolBar = CWChatToolBar(frame:frame)
         chatToolBar.delegate = self
         return chatToolBar
@@ -233,7 +233,7 @@ public class CWChatKeyboard: UIView {
     
     // 更多部分
     lazy var moreInputView: MoreInputView = {
-        let frame = CGRect(x: 0, y: kChatKeyboardHeight-kMoreInputViewHeight, width: kScreenWidth, height: kMoreInputViewHeight)
+        let frame = CGRect(x: 0, y: kChatKeyboardHeight-kMoreInputViewHeight, width: kSCREEN_WIDTH, height: kMoreInputViewHeight)
         let moreInputView = MoreInputView(frame: frame)
         let items = MoreInputDataHelper().chatMoreKeyboardData
         moreInputView.loadData(items)

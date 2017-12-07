@@ -81,7 +81,7 @@ extension CWMessageViewLayout {
             // cell 高度
             let heightOfCell = attributes.messageContainerFrame.height + kMessageCellBottomMargin + kMessageCellTopMargin
 
-            attributes.frame = CGRect(x: 0, y: contentHeight, width: kScreenWidth, height: heightOfCell)
+            attributes.frame = CGRect(x: 0, y: contentHeight, width: kSCREEN_WIDTH, height: heightOfCell)
             
             contentHeight = attributes.frame.maxY
 

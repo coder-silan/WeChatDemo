@@ -25,8 +25,8 @@ public class CWMoreInputView: UIView {
     var pageItemCount: Int = 0
     
     private convenience init() {
-        let size = CGSize(width: kScreenWidth, height: kMoreInputViewHeight)
-        let origin = CGPoint(x: 0, y: kScreenHeight-size.height)
+        let size = CGSize(width: kSCREEN_WIDTH, height: kMoreInputViewHeight)
+        let origin = CGPoint(x: 0, y: kSCREEN_HEIGHT-size.height)
         let frame = CGRect(origin: origin, size: size)
         self.init(frame: frame)
     }
@@ -53,12 +53,12 @@ public class CWMoreInputView: UIView {
     
     lazy var collectionView: UICollectionView = {
         // 间距
-        var itemWidth = (kScreenWidth - 10*2)/CGFloat(kOneLineItem)
+        var itemWidth = (kSCREEN_WIDTH - 10*2)/CGFloat(kOneLineItem)
         itemWidth = YYTextCGFloatPixelRound(itemWidth)
         
-        let padding = (kScreenWidth - CGFloat(kOneLineItem) * itemWidth) / 2.0
+        let padding = (kSCREEN_WIDTH - CGFloat(kOneLineItem) * itemWidth) / 2.0
         let paddingLeft = YYTextCGFloatPixelRound(padding)
-        let paddingRight = kScreenWidth - paddingLeft - itemWidth * CGFloat(kOneLineItem)
+        let paddingRight = kSCREEN_WIDTH - paddingLeft - itemWidth * CGFloat(kOneLineItem)
         
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
@@ -67,7 +67,7 @@ public class CWMoreInputView: UIView {
         layout.minimumInteritemSpacing = 0
         layout.sectionInset = UIEdgeInsetsMake(0, paddingLeft, 0, paddingRight)
         
-        let frame = CGRect(x: 0, y: 0, width: kScreenWidth, height: kOneItemHeight*CGFloat(kOneLines))
+        let frame = CGRect(x: 0, y: 0, width: kSCREEN_WIDTH, height: kOneItemHeight*CGFloat(kOneLines))
         var collectionView = UICollectionView(frame: frame, collectionViewLayout: layout)
         collectionView.dataSource = self
         collectionView.backgroundColor = UIColor.clear

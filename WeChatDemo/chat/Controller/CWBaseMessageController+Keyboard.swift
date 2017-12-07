@@ -66,10 +66,10 @@ extension CWBaseMessageController {
                        animations: {
                         
                         if hideKeyBoard {
-                            self.collectionView.height = kScreenHeight-kChatToolBarHeight
+                            self.collectionView.height = kSCREEN_HEIGHT-kTabBarHeight
                             //self.tableView.bottom = self.chatToolBar.top
                         } else {
-                            self.collectionView.height = kScreenHeight-kChatToolBarHeight-keyboardFrame.height
+                            self.collectionView.height = kSCREEN_HEIGHT-kTabBarHeight-keyboardFrame.height
                             //self.tableView.bottom = self.chatToolBar.top
                         }
                         

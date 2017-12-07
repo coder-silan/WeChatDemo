@@ -32,8 +32,7 @@ public enum CWMoreItemType: Int {
 
 
 let kMoreInputViewHeight: CGFloat = 216
-let kChatToolBarHeight: CGFloat = 49
 
-let kChatKeyboardHeight = kMoreInputViewHeight + kChatToolBarHeight
+let kChatKeyboardHeight = kMoreInputViewHeight + kTabBarHeight
 
 

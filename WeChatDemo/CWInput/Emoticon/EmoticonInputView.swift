@@ -49,7 +49,7 @@ public class EmoticonInputView: UIView {
     var selectIndex: Int = 0
     
     convenience init() {
-        let frame = CGRect(x: 0, y: 0, width: kScreenWidth, height: kMoreInputViewHeight)
+        let frame = CGRect(x: 0, y: 0, width: kSCREEN_WIDTH, height: kMoreInputViewHeight)
         self.init(frame: frame)
     }
     

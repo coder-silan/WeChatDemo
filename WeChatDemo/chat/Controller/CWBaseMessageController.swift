@@ -18,7 +18,7 @@ public class CWBaseMessageController: UIViewController {
 
     lazy var collectionView: UICollectionView = {
         let frame = CGRect(x: 0, y: 0,
-                           width: kScreenWidth, height: kScreenHeight-kTabBarHeight)
+                           width: kSCREEN_WIDTH, height: kSCREEN_HEIGHT-kTabBarHeight)
         let layout = CWMessageViewLayout()
         layout.delegate = self
         let collectionView = UICollectionView(frame: frame, collectionViewLayout: layout)

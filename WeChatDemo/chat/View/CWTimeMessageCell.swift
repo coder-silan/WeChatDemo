@@ -33,7 +33,7 @@ public class CWTimeMessageCell: UITableViewCell {
     public override func layoutSubviews() {
         timeLabel.sizeToFit()
         timeLabel.size = CGSize(width: timeLabel.width + 2*6.0, height: 18)
-        timeLabel.centerX = kScreenWidth/2
+        timeLabel.centerX = kSCREEN_WIDTH/2
         timeLabel.top = kChatTimeLabelMarginTop
     }
     

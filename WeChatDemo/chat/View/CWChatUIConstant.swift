@@ -12,12 +12,12 @@ import UIKit
 let kMessageCellTopMargin:      CGFloat =  2.0
 let kMessageCellBottomMargin:   CGFloat =  12.0
 
-let kChatTextMaxWidth = kScreenWidth * 0.58
+let kChatTextMaxWidth = kSCREEN_WIDTH * 0.58
 //图片
-let kChatImageMaxWidth = kScreenWidth * 0.45
-let kChatImageMinWidth = kScreenWidth * 0.25
+let kChatImageMaxWidth = kSCREEN_WIDTH * 0.45
+let kChatImageMinWidth = kSCREEN_WIDTH * 0.25
 
-let kChatVoiceMaxWidth = kScreenWidth * 0.3
+let kChatVoiceMaxWidth = kSCREEN_WIDTH * 0.3
 
 let defaultHeadeImage = CWAsset.Default_head.image
 

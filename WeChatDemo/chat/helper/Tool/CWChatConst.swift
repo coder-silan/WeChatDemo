@@ -10,11 +10,11 @@ import Foundation
 import UIKit
 
 let kScreenSize = UIScreen.main.bounds.size
-let kScreenWidth = UIScreen.main.bounds.size.width
-let kScreenHeight = UIScreen.main.bounds.size.height
+//let kSCREEN_WIDTH = UIScreen.main.bounds.size.width
+//let kSCREEN_HEIGHT = UIScreen.main.bounds.size.height
 let kScreenScale = UIScreen.main.scale
 
-let kNavigationBarHeight:CGFloat = 64
+//let kNavigationBarHeight:CGFloat = 64
 
 
 // stolen from Kingfisher: https://github.com/onevcat/Kingfisher/blob/master/Sources/ThreadHelper.swift

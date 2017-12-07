@@ -9,7 +9,7 @@
 import UIKit
 //import SQLite.Swift
 
-/// 数据库管理
+// 数据库管理
 class EmoticonManager {
     
     public static let shared = EmoticonManager()
@@ -41,22 +41,22 @@ class EmoticonManager {
     
     
     // MARK: Helper
-     
+    
     
     
 }
 
 
 // MARK: 增加
-extension EmoticonManager {
-    
-    func addEmoticonPackage(_ package: EmoticonPackage) {
-        
-        
-        
-    }
-    
-}
+//extension EmoticonManager {
+//    
+//    func addEmoticonPackage(_ package: EmoticonPackage) {
+//        
+//        
+//        
+//    }
+//    
+//}
 
 // MARK: 查找
 extension EmoticonManager {
@@ -78,13 +78,13 @@ extension EmoticonManager {
         return image
     }
     
-    // 获取当前用户的表情包
-    func fetchEmoticonPackageList() -> [EmoticonPackage] {
-        let packageList = [EmoticonPackage]()
-        
-    
-        return packageList
-    }
+   //  获取当前用户的表情包
+//    func fetchEmoticonPackageList() -> [EmoticonPackage] {
+//        let packageList = [EmoticonPackage]()
+//
+//
+//        return packageList
+//    }
 }
 
 // MARK: 删除

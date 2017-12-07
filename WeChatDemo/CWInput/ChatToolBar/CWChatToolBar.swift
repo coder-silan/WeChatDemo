@@ -101,7 +101,7 @@ public class CWChatToolBar: UIView {
         let toolBarHeight = self.height
         
         let kItem: CGFloat = 42
-        let buttonSize = CGSize(width: kItem, height: kChatToolBarHeight)
+        let buttonSize = CGSize(width: kItem, height: kTabBarHeight)
        
 //        if self.allowVoice {
 //            let origin = CGPoint(x: 0, y: toolBarHeight-buttonSize.height)
@@ -111,14 +111,14 @@ public class CWChatToolBar: UIView {
 //        }
         
         if self.allowMoreView {
-            let origin = CGPoint(x: kScreenWidth-buttonSize.width, y: toolBarHeight-buttonSize.height)
+            let origin = CGPoint(x: kSCREEN_WIDTH-buttonSize.width, y: toolBarHeight-buttonSize.height)
             moreButton.frame = CGRect(origin: origin, size: buttonSize)
         } else {
             moreButton.frame = CGRect.zero
         }
         
         if self.allowFaceView {
-            let origin = CGPoint(x: kScreenWidth-buttonSize.width*2, y: toolBarHeight-buttonSize.height)
+            let origin = CGPoint(x: kSCREEN_WIDTH-buttonSize.width*2, y: toolBarHeight-buttonSize.height)
             emoticonButton.frame = CGRect(origin: origin, size: buttonSize)
         } else {
             emoticonButton.frame = CGRect.zero
@@ -133,7 +133,7 @@ public class CWChatToolBar: UIView {
 //        }
         
         let height = self.textViewLineHeight()
-        inputTextView.frame = CGRect(x: CGFloat(textViewX), y: (kChatToolBarHeight - height)/2.0,
+        inputTextView.frame = CGRect(x: CGFloat(textViewX), y: (kTabBarHeight - height)/2.0,
                                      width: textViewWidth, height: height)
       //  recordButton.frame = inputTextView.frame
     }
