@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		155D15544D2AA0DDD90B0806 /* Pods_WeChatDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72DA7DF07DB8BCEA82BD6E7D /* Pods_WeChatDemoTests.framework */; };
 		2E5493381FD7F91400DB934B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5493371FD7F91400DB934B /* AppDelegate.swift */; };
 		2E54933A1FD7F91400DB934B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5493391FD7F91400DB934B /* ViewController.swift */; };
 		2E54933D1FD7F91400DB934B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E54933B1FD7F91400DB934B /* Main.storyboard */; };
@@ -14,6 +15,95 @@
 		2E5493421FD7F91400DB934B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E5493401FD7F91400DB934B /* LaunchScreen.storyboard */; };
 		2E54934D1FD7F91400DB934B /* WeChatDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E54934C1FD7F91400DB934B /* WeChatDemoTests.swift */; };
 		2E5493581FD7F91400DB934B /* WeChatDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5493571FD7F91400DB934B /* WeChatDemoUITests.swift */; };
+		2E5494511FD8CCF300DB934B /* NSString+Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5494451FD8CCF300DB934B /* NSString+Chat.swift */; };
+		2E5494521FD8CCF300DB934B /* NSString+PinYin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5494461FD8CCF300DB934B /* NSString+PinYin.swift */; };
+		2E5494531FD8CCF300DB934B /* UIApplication+CWChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5494471FD8CCF300DB934B /* UIApplication+CWChat.swift */; };
+		2E5494541FD8CCF300DB934B /* UIBarButtonItem+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5494481FD8CCF300DB934B /* UIBarButtonItem+Extensions.swift */; };
+		2E5494551FD8CCF300DB934B /* UIButton+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5494491FD8CCF300DB934B /* UIButton+Extensions.swift */; };
+		2E5494561FD8CCF300DB934B /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E54944A1FD8CCF300DB934B /* UIColor+Extension.swift */; };
+		2E5494571FD8CCF300DB934B /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E54944B1FD8CCF300DB934B /* UIFont+Extension.swift */; };
+		2E5494581FD8CCF300DB934B /* UIImage+CWChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E54944C1FD8CCF300DB934B /* UIImage+CWChat.swift */; };
+		2E5494591FD8CCF300DB934B /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E54944D1FD8CCF300DB934B /* UIImage+Extension.swift */; };
+		2E54945A1FD8CCF300DB934B /* UIStoryboard+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E54944E1FD8CCF300DB934B /* UIStoryboard+Extension.swift */; };
+		2E54945B1FD8CCF300DB934B /* UITableView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E54944F1FD8CCF300DB934B /* UITableView+Reusable.swift */; };
+		2E54945C1FD8CCF300DB934B /* UIView+Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5494501FD8CCF300DB934B /* UIView+Frame.swift */; };
+		2E5494621FD8CD3B00DB934B /* ChatTimeTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E54945E1FD8CD3B00DB934B /* ChatTimeTool.swift */; };
+		2E5494631FD8CD3B00DB934B /* CWChatConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E54945F1FD8CD3B00DB934B /* CWChatConst.swift */; };
+		2E5494641FD8CD3B00DB934B /* CWPlayMessageAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5494601FD8CD3B00DB934B /* CWPlayMessageAudio.swift */; };
+		2E5494651FD8CD3B00DB934B /* CWUIUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5494611FD8CD3B00DB934B /* CWUIUtility.swift */; };
+		2E5494671FD8CD6A00DB934B /* CWMessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5494661FD8CD6A00DB934B /* CWMessageModel.swift */; };
+		2E5494691FD8CDD800DB934B /* CWMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5494681FD8CDD800DB934B /* CWMessage.swift */; };
+		2E54946B1FD8CE2C00DB934B /* CWTextMessageBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E54946A1FD8CE2C00DB934B /* CWTextMessageBody.swift */; };
+		2E54946D1FD8CE3400DB934B /* CWFileMessageBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E54946C1FD8CE3400DB934B /* CWFileMessageBody.swift */; };
+		2E54946F1FD8CE3A00DB934B /* CWImageMessageBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E54946E1FD8CE3A00DB934B /* CWImageMessageBody.swift */; };
+		2E5494711FD8CE5200DB934B /* CWEmoticonMessageBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5494701FD8CE5100DB934B /* CWEmoticonMessageBody.swift */; };
+		2E5494731FD8CE5700DB934B /* CWChatUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5494721FD8CE5700DB934B /* CWChatUser.swift */; };
+		2E5494751FD8CE7400DB934B /* CWMessageBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5494741FD8CE7400DB934B /* CWMessageBody.swift */; };
+		2E5494771FD8D05A00DB934B /* CWBaseMessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5494761FD8D05A00DB934B /* CWBaseMessageController.swift */; };
+		2E54947A1FD8D22F00DB934B /* CWMessageViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5494791FD8D22F00DB934B /* CWMessageViewLayout.swift */; };
+		2E54947C1FD8D25600DB934B /* CWMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E54947B1FD8D25600DB934B /* CWMessageCell.swift */; };
+		2E54947E1FD8D29C00DB934B /* MessageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E54947D1FD8D29C00DB934B /* MessageContentView.swift */; };
+		2E5494801FD8D2AF00DB934B /* EmoticonMessageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E54947F1FD8D2AF00DB934B /* EmoticonMessageContentView.swift */; };
+		2E5494821FD8D2BE00DB934B /* ImageMessageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5494811FD8D2BE00DB934B /* ImageMessageContentView.swift */; };
+		2E5494841FD8D2C700DB934B /* TextMessageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5494831FD8D2C700DB934B /* TextMessageContentView.swift */; };
+		2E5494861FD8D2D800DB934B /* CWChatUIConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5494851FD8D2D800DB934B /* CWChatUIConstant.swift */; };
+		2E5494881FD8D2EC00DB934B /* CWTimeMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5494871FD8D2EC00DB934B /* CWTimeMessageCell.swift */; };
+		2E54948A1FD8D2FB00DB934B /* CWChatTextDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5494891FD8D2FB00DB934B /* CWChatTextDisplayView.swift */; };
+		2E54948C1FD8D30F00DB934B /* CWChatImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E54948B1FD8D30F00DB934B /* CWChatImageView.swift */; };
+		2E54948E1FD8D3CD00DB934B /* CWMessageLayoutAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E54948D1FD8D3CD00DB934B /* CWMessageLayoutAttributes.swift */; };
+		2E5494901FD8D3D200DB934B /* CWMessageLayoutSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E54948F1FD8D3D200DB934B /* CWMessageLayoutSettings.swift */; };
+		2E5494931FD8D45100DB934B /* CWTextLinePositionModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5494921FD8D45100DB934B /* CWTextLinePositionModifier.swift */; };
+		2E5494951FD8D45800DB934B /* CWChatTextParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5494941FD8D45800DB934B /* CWChatTextParser.swift */; };
+		2E5494971FD8D4DB00DB934B /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5494961FD8D4DB00DB934B /* Const.swift */; };
+		2E54949E1FD8DBE000DB934B /* chat_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E54949D1FD8DBE000DB934B /* chat_background.png */; };
+		2E9469411FD8DDD30000DC20 /* ChatToolBarStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9469271FD8DDD30000DC20 /* ChatToolBarStyle.swift */; };
+		2E9469421FD8DDD30000DC20 /* CWChatKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9469281FD8DDD30000DC20 /* CWChatKeyboard.swift */; };
+		2E9469431FD8DDD30000DC20 /* CWChatToolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9469291FD8DDD30000DC20 /* CWChatToolBar.swift */; };
+		2E9469441FD8DDD30000DC20 /* CWInputTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E94692A1FD8DDD30000DC20 /* CWInputTextView.swift */; };
+		2E9469451FD8DDD30000DC20 /* CWRecordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E94692B1FD8DDD30000DC20 /* CWRecordButton.swift */; };
+		2E9469461FD8DDD30000DC20 /* EmoticonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E94692D1FD8DDD30000DC20 /* EmoticonCell.swift */; };
+		2E9469471FD8DDD30000DC20 /* EmoticonGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E94692E1FD8DDD30000DC20 /* EmoticonGroup.swift */; };
+		2E9469481FD8DDD30000DC20 /* EmoticonInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E94692F1FD8DDD30000DC20 /* EmoticonInputView.swift */; };
+		2E9469491FD8DDD30000DC20 /* EmoticonPageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9469301FD8DDD30000DC20 /* EmoticonPageCell.swift */; };
+		2E94694A1FD8DDD30000DC20 /* EmoticonPageCellLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9469311FD8DDD30000DC20 /* EmoticonPageCellLayout.swift */; };
+		2E94694B1FD8DDD30000DC20 /* EmoticonPreviewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9469321FD8DDD30000DC20 /* EmoticonPreviewer.swift */; };
+		2E94694C1FD8DDD30000DC20 /* EmoticonToolItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9469331FD8DDD30000DC20 /* EmoticonToolItemCell.swift */; };
+		2E94694D1FD8DDD30000DC20 /* EmoticonToolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9469341FD8DDD30000DC20 /* EmoticonToolView.swift */; };
+		2E94694E1FD8DDD30000DC20 /* InputTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9469361FD8DDD30000DC20 /* InputTextView.swift */; };
+		2E94694F1FD8DDD30000DC20 /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9469371FD8DDD30000DC20 /* Keyboard.swift */; };
+		2E9469501FD8DDD30000DC20 /* RecordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9469381FD8DDD30000DC20 /* RecordButton.swift */; };
+		2E9469511FD8DDD30000DC20 /* ToolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9469391FD8DDD30000DC20 /* ToolView.swift */; };
+		2E9469521FD8DDD30000DC20 /* CWMoreInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E94693B1FD8DDD30000DC20 /* CWMoreInputView.swift */; };
+		2E9469531FD8DDD30000DC20 /* MoreInputDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E94693C1FD8DDD30000DC20 /* MoreInputDataHelper.swift */; };
+		2E9469541FD8DDD30000DC20 /* MoreInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E94693D1FD8DDD30000DC20 /* MoreInputView.swift */; };
+		2E9469551FD8DDD30000DC20 /* MoreInputViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E94693E1FD8DDD30000DC20 /* MoreInputViewLayout.swift */; };
+		2E9469561FD8DDD30000DC20 /* MoreItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E94693F1FD8DDD30000DC20 /* MoreItem.swift */; };
+		2E9469571FD8DDD30000DC20 /* MoreItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9469401FD8DDD30000DC20 /* MoreItemCell.swift */; };
+		2E94696E1FD8DE110000DC20 /* CWEmoticonDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9469591FD8DE110000DC20 /* CWEmoticonDetailController.swift */; };
+		2E94696F1FD8DE110000DC20 /* CWEmoticonListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E94695A1FD8DE110000DC20 /* CWEmoticonListController.swift */; };
+		2E9469701FD8DE110000DC20 /* CWFeaturedEmoticonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E94695B1FD8DE110000DC20 /* CWFeaturedEmoticonController.swift */; };
+		2E9469711FD8DE110000DC20 /* CWMoreEmoticonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E94695C1FD8DE110000DC20 /* CWMoreEmoticonController.swift */; };
+		2E9469721FD8DE110000DC20 /* CWMyEmoticonListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E94695D1FD8DE110000DC20 /* CWMyEmoticonListController.swift */; };
+		2E9469731FD8DE110000DC20 /* Emoticon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E94695F1FD8DE110000DC20 /* Emoticon.swift */; };
+		2E9469741FD8DE110000DC20 /* EmoticonPackage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9469601FD8DE110000DC20 /* EmoticonPackage.swift */; };
+		2E9469751FD8DE110000DC20 /* EmoticonManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9469621FD8DE110000DC20 /* EmoticonManager.swift */; };
+		2E9469761FD8DE110000DC20 /* EmoticonService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9469631FD8DE110000DC20 /* EmoticonService.swift */; };
+		2E9469771FD8DE110000DC20 /* EmoticonDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9469651FD8DE110000DC20 /* EmoticonDetailCell.swift */; };
+		2E9469781FD8DE110000DC20 /* EmoticonDetailFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9469661FD8DE110000DC20 /* EmoticonDetailFooterView.swift */; };
+		2E9469791FD8DE110000DC20 /* EmoticonDetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9469671FD8DE110000DC20 /* EmoticonDetailHeaderView.swift */; };
+		2E94697A1FD8DE110000DC20 /* EmoticonListBannerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9469681FD8DE110000DC20 /* EmoticonListBannerCell.swift */; };
+		2E94697B1FD8DE110000DC20 /* EmoticonListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9469691FD8DE110000DC20 /* EmoticonListCell.swift */; };
+		2E94697C1FD8DE110000DC20 /* EmoticonListHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E94696A1FD8DE110000DC20 /* EmoticonListHeaderView.swift */; };
+		2E94697D1FD8DE110000DC20 /* MoreEmoticonBannerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E94696B1FD8DE110000DC20 /* MoreEmoticonBannerCell.swift */; };
+		2E94697E1FD8DE110000DC20 /* MoreEmoticonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E94696C1FD8DE110000DC20 /* MoreEmoticonCell.swift */; };
+		2E94697F1FD8DE110000DC20 /* MyEmoticonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E94696D1FD8DE110000DC20 /* MyEmoticonCell.swift */; };
+		2E9469811FD8DE340000DC20 /* emoticons.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2E9469801FD8DE340000DC20 /* emoticons.bundle */; };
+		2E9469831FD8DE3B0000DC20 /* Emotion.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2E9469821FD8DE3B0000DC20 /* Emotion.bundle */; };
+		2E9469851FD8DE760000DC20 /* CWBaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9469841FD8DE760000DC20 /* CWBaseTableViewController.swift */; };
+		2E9469871FD8E43D0000DC20 /* CWBaseMessageController+Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9469861FD8E43D0000DC20 /* CWBaseMessageController+Keyboard.swift */; };
+		2E9469891FD8E52B0000DC20 /* CWChatKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9469881FD8E52A0000DC20 /* CWChatKit.swift */; };
+		93353B1A7003F6E9F68ABF7E /* Pods_WeChatDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E48F38146F3894031D636F0 /* Pods_WeChatDemo.framework */; };
+		A29837DD5B2747FAAED9C4F9 /* Pods_WeChatDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B078FC5658352B4A07732F6 /* Pods_WeChatDemoUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +124,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		242425485CE9DD49A355809F /* Pods-WeChatDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeChatDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeChatDemoTests/Pods-WeChatDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		2923E152CD439BEE89B8302C /* Pods-WeChatDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeChatDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeChatDemo/Pods-WeChatDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		2E48F38146F3894031D636F0 /* Pods_WeChatDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeChatDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E5493341FD7F91400DB934B /* WeChatDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeChatDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E5493371FD7F91400DB934B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2E5493391FD7F91400DB934B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +140,99 @@
 		2E5493531FD7F91400DB934B /* WeChatDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeChatDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E5493571FD7F91400DB934B /* WeChatDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeChatDemoUITests.swift; sourceTree = "<group>"; };
 		2E5493591FD7F91400DB934B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E5494451FD8CCF300DB934B /* NSString+Chat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSString+Chat.swift"; sourceTree = "<group>"; };
+		2E5494461FD8CCF300DB934B /* NSString+PinYin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSString+PinYin.swift"; sourceTree = "<group>"; };
+		2E5494471FD8CCF300DB934B /* UIApplication+CWChat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+CWChat.swift"; sourceTree = "<group>"; };
+		2E5494481FD8CCF300DB934B /* UIBarButtonItem+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extensions.swift"; sourceTree = "<group>"; };
+		2E5494491FD8CCF300DB934B /* UIButton+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Extensions.swift"; sourceTree = "<group>"; };
+		2E54944A1FD8CCF300DB934B /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		2E54944B1FD8CCF300DB934B /* UIFont+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
+		2E54944C1FD8CCF300DB934B /* UIImage+CWChat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+CWChat.swift"; sourceTree = "<group>"; };
+		2E54944D1FD8CCF300DB934B /* UIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		2E54944E1FD8CCF300DB934B /* UIStoryboard+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Extension.swift"; sourceTree = "<group>"; };
+		2E54944F1FD8CCF300DB934B /* UITableView+Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Reusable.swift"; sourceTree = "<group>"; };
+		2E5494501FD8CCF300DB934B /* UIView+Frame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Frame.swift"; sourceTree = "<group>"; };
+		2E54945E1FD8CD3B00DB934B /* ChatTimeTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatTimeTool.swift; sourceTree = "<group>"; };
+		2E54945F1FD8CD3B00DB934B /* CWChatConst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CWChatConst.swift; sourceTree = "<group>"; };
+		2E5494601FD8CD3B00DB934B /* CWPlayMessageAudio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CWPlayMessageAudio.swift; sourceTree = "<group>"; };
+		2E5494611FD8CD3B00DB934B /* CWUIUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CWUIUtility.swift; sourceTree = "<group>"; };
+		2E5494661FD8CD6A00DB934B /* CWMessageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CWMessageModel.swift; sourceTree = "<group>"; };
+		2E5494681FD8CDD800DB934B /* CWMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CWMessage.swift; sourceTree = "<group>"; };
+		2E54946A1FD8CE2C00DB934B /* CWTextMessageBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CWTextMessageBody.swift; sourceTree = "<group>"; };
+		2E54946C1FD8CE3400DB934B /* CWFileMessageBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CWFileMessageBody.swift; sourceTree = "<group>"; };
+		2E54946E1FD8CE3A00DB934B /* CWImageMessageBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CWImageMessageBody.swift; sourceTree = "<group>"; };
+		2E5494701FD8CE5100DB934B /* CWEmoticonMessageBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CWEmoticonMessageBody.swift; sourceTree = "<group>"; };
+		2E5494721FD8CE5700DB934B /* CWChatUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CWChatUser.swift; sourceTree = "<group>"; };
+		2E5494741FD8CE7400DB934B /* CWMessageBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CWMessageBody.swift; sourceTree = "<group>"; };
+		2E5494761FD8D05A00DB934B /* CWBaseMessageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CWBaseMessageController.swift; sourceTree = "<group>"; wrapsLines = 0; };
+		2E5494791FD8D22F00DB934B /* CWMessageViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CWMessageViewLayout.swift; sourceTree = "<group>"; };
+		2E54947B1FD8D25600DB934B /* CWMessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CWMessageCell.swift; sourceTree = "<group>"; };
+		2E54947D1FD8D29C00DB934B /* MessageContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageContentView.swift; sourceTree = "<group>"; };
+		2E54947F1FD8D2AF00DB934B /* EmoticonMessageContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonMessageContentView.swift; sourceTree = "<group>"; };
+		2E5494811FD8D2BE00DB934B /* ImageMessageContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageMessageContentView.swift; sourceTree = "<group>"; };
+		2E5494831FD8D2C700DB934B /* TextMessageContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextMessageContentView.swift; sourceTree = "<group>"; };
+		2E5494851FD8D2D800DB934B /* CWChatUIConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CWChatUIConstant.swift; sourceTree = "<group>"; };
+		2E5494871FD8D2EC00DB934B /* CWTimeMessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CWTimeMessageCell.swift; sourceTree = "<group>"; };
+		2E5494891FD8D2FB00DB934B /* CWChatTextDisplayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CWChatTextDisplayView.swift; sourceTree = "<group>"; };
+		2E54948B1FD8D30F00DB934B /* CWChatImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CWChatImageView.swift; sourceTree = "<group>"; };
+		2E54948D1FD8D3CD00DB934B /* CWMessageLayoutAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CWMessageLayoutAttributes.swift; sourceTree = "<group>"; };
+		2E54948F1FD8D3D200DB934B /* CWMessageLayoutSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CWMessageLayoutSettings.swift; sourceTree = "<group>"; };
+		2E5494921FD8D45100DB934B /* CWTextLinePositionModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CWTextLinePositionModifier.swift; sourceTree = "<group>"; };
+		2E5494941FD8D45800DB934B /* CWChatTextParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CWChatTextParser.swift; sourceTree = "<group>"; };
+		2E5494961FD8D4DB00DB934B /* Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		2E54949D1FD8DBE000DB934B /* chat_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chat_background.png; sourceTree = "<group>"; };
+		2E9469271FD8DDD30000DC20 /* ChatToolBarStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatToolBarStyle.swift; sourceTree = "<group>"; };
+		2E9469281FD8DDD30000DC20 /* CWChatKeyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CWChatKeyboard.swift; sourceTree = "<group>"; };
+		2E9469291FD8DDD30000DC20 /* CWChatToolBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CWChatToolBar.swift; sourceTree = "<group>"; };
+		2E94692A1FD8DDD30000DC20 /* CWInputTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CWInputTextView.swift; sourceTree = "<group>"; };
+		2E94692B1FD8DDD30000DC20 /* CWRecordButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CWRecordButton.swift; sourceTree = "<group>"; };
+		2E94692D1FD8DDD30000DC20 /* EmoticonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonCell.swift; sourceTree = "<group>"; };
+		2E94692E1FD8DDD30000DC20 /* EmoticonGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonGroup.swift; sourceTree = "<group>"; };
+		2E94692F1FD8DDD30000DC20 /* EmoticonInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonInputView.swift; sourceTree = "<group>"; };
+		2E9469301FD8DDD30000DC20 /* EmoticonPageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonPageCell.swift; sourceTree = "<group>"; };
+		2E9469311FD8DDD30000DC20 /* EmoticonPageCellLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonPageCellLayout.swift; sourceTree = "<group>"; };
+		2E9469321FD8DDD30000DC20 /* EmoticonPreviewer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonPreviewer.swift; sourceTree = "<group>"; };
+		2E9469331FD8DDD30000DC20 /* EmoticonToolItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonToolItemCell.swift; sourceTree = "<group>"; };
+		2E9469341FD8DDD30000DC20 /* EmoticonToolView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonToolView.swift; sourceTree = "<group>"; };
+		2E9469361FD8DDD30000DC20 /* InputTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputTextView.swift; sourceTree = "<group>"; };
+		2E9469371FD8DDD30000DC20 /* Keyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keyboard.swift; sourceTree = "<group>"; };
+		2E9469381FD8DDD30000DC20 /* RecordButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordButton.swift; sourceTree = "<group>"; };
+		2E9469391FD8DDD30000DC20 /* ToolView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToolView.swift; sourceTree = "<group>"; };
+		2E94693B1FD8DDD30000DC20 /* CWMoreInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CWMoreInputView.swift; sourceTree = "<group>"; };
+		2E94693C1FD8DDD30000DC20 /* MoreInputDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreInputDataHelper.swift; sourceTree = "<group>"; };
+		2E94693D1FD8DDD30000DC20 /* MoreInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreInputView.swift; sourceTree = "<group>"; };
+		2E94693E1FD8DDD30000DC20 /* MoreInputViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreInputViewLayout.swift; sourceTree = "<group>"; };
+		2E94693F1FD8DDD30000DC20 /* MoreItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreItem.swift; sourceTree = "<group>"; };
+		2E9469401FD8DDD30000DC20 /* MoreItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreItemCell.swift; sourceTree = "<group>"; };
+		2E9469591FD8DE110000DC20 /* CWEmoticonDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CWEmoticonDetailController.swift; sourceTree = "<group>"; };
+		2E94695A1FD8DE110000DC20 /* CWEmoticonListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CWEmoticonListController.swift; sourceTree = "<group>"; };
+		2E94695B1FD8DE110000DC20 /* CWFeaturedEmoticonController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CWFeaturedEmoticonController.swift; sourceTree = "<group>"; };
+		2E94695C1FD8DE110000DC20 /* CWMoreEmoticonController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CWMoreEmoticonController.swift; sourceTree = "<group>"; };
+		2E94695D1FD8DE110000DC20 /* CWMyEmoticonListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CWMyEmoticonListController.swift; sourceTree = "<group>"; };
+		2E94695F1FD8DE110000DC20 /* Emoticon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Emoticon.swift; sourceTree = "<group>"; };
+		2E9469601FD8DE110000DC20 /* EmoticonPackage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonPackage.swift; sourceTree = "<group>"; };
+		2E9469621FD8DE110000DC20 /* EmoticonManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonManager.swift; sourceTree = "<group>"; };
+		2E9469631FD8DE110000DC20 /* EmoticonService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonService.swift; sourceTree = "<group>"; };
+		2E9469651FD8DE110000DC20 /* EmoticonDetailCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonDetailCell.swift; sourceTree = "<group>"; };
+		2E9469661FD8DE110000DC20 /* EmoticonDetailFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonDetailFooterView.swift; sourceTree = "<group>"; };
+		2E9469671FD8DE110000DC20 /* EmoticonDetailHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonDetailHeaderView.swift; sourceTree = "<group>"; };
+		2E9469681FD8DE110000DC20 /* EmoticonListBannerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonListBannerCell.swift; sourceTree = "<group>"; };
+		2E9469691FD8DE110000DC20 /* EmoticonListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonListCell.swift; sourceTree = "<group>"; };
+		2E94696A1FD8DE110000DC20 /* EmoticonListHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonListHeaderView.swift; sourceTree = "<group>"; };
+		2E94696B1FD8DE110000DC20 /* MoreEmoticonBannerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreEmoticonBannerCell.swift; sourceTree = "<group>"; };
+		2E94696C1FD8DE110000DC20 /* MoreEmoticonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreEmoticonCell.swift; sourceTree = "<group>"; };
+		2E94696D1FD8DE110000DC20 /* MyEmoticonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyEmoticonCell.swift; sourceTree = "<group>"; };
+		2E9469801FD8DE340000DC20 /* emoticons.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = emoticons.bundle; sourceTree = "<group>"; };
+		2E9469821FD8DE3B0000DC20 /* Emotion.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Emotion.bundle; sourceTree = "<group>"; };
+		2E9469841FD8DE760000DC20 /* CWBaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CWBaseTableViewController.swift; sourceTree = "<group>"; };
+		2E9469861FD8E43D0000DC20 /* CWBaseMessageController+Keyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CWBaseMessageController+Keyboard.swift"; sourceTree = "<group>"; };
+		2E9469881FD8E52A0000DC20 /* CWChatKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CWChatKit.swift; sourceTree = "<group>"; };
+		2EB80A291585394370498D47 /* Pods-WeChatDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeChatDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeChatDemoUITests/Pods-WeChatDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		72DA7DF07DB8BCEA82BD6E7D /* Pods_WeChatDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeChatDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		97510ABA5FCE263A673899A0 /* Pods-WeChatDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeChatDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeChatDemoUITests/Pods-WeChatDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9B078FC5658352B4A07732F6 /* Pods_WeChatDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeChatDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C96D7656828EDFA4F9B37ABF /* Pods-WeChatDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeChatDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeChatDemoTests/Pods-WeChatDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CC9503219360A407A05D6360 /* Pods-WeChatDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeChatDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeChatDemo/Pods-WeChatDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +240,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93353B1A7003F6E9F68ABF7E /* Pods_WeChatDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +248,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				155D15544D2AA0DDD90B0806 /* Pods_WeChatDemoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +256,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A29837DD5B2747FAAED9C4F9 /* Pods_WeChatDemoUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +270,8 @@
 				2E54934B1FD7F91400DB934B /* WeChatDemoTests */,
 				2E5493561FD7F91400DB934B /* WeChatDemoUITests */,
 				2E5493351FD7F91400DB934B /* Products */,
+				556F47192EE61446A04B7B22 /* Pods */,
+				B4CC2989AA5075D10039E198 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,10 +288,15 @@
 		2E5493361FD7F91400DB934B /* WeChatDemo */ = {
 			isa = PBXGroup;
 			children = (
+				2E54949D1FD8DBE000DB934B /* chat_background.png */,
+				2E5494961FD8D4DB00DB934B /* Const.swift */,
 				2E5493371FD7F91400DB934B /* AppDelegate.swift */,
 				2E5493391FD7F91400DB934B /* ViewController.swift */,
 				2E54933B1FD7F91400DB934B /* Main.storyboard */,
 				2E54933E1FD7F91400DB934B /* Assets.xcassets */,
+				2E54943F1FD8CC6500DB934B /* chat */,
+				2E9469251FD8DDD30000DC20 /* CWInput */,
+				2E9469581FD8DE110000DC20 /* Expression */,
 				2E5493401FD7F91400DB934B /* LaunchScreen.storyboard */,
 				2E5493431FD7F91400DB934B /* Info.plist */,
 			);
@@ -125,6 +321,255 @@
 			path = WeChatDemoUITests;
 			sourceTree = "<group>";
 		};
+		2E54943F1FD8CC6500DB934B /* chat */ = {
+			isa = PBXGroup;
+			children = (
+				2E9469881FD8E52A0000DC20 /* CWChatKit.swift */,
+				2E5494911FD8D44800DB934B /* tool */,
+				2E5494431FD8CC8E00DB934B /* Controller */,
+				2E5494421FD8CC8500DB934B /* Model */,
+				2E5494411FD8CC7B00DB934B /* View */,
+				2E5494401FD8CC6E00DB934B /* helper */,
+			);
+			path = chat;
+			sourceTree = "<group>";
+		};
+		2E5494401FD8CC6E00DB934B /* helper */ = {
+			isa = PBXGroup;
+			children = (
+				2E54945D1FD8CD3B00DB934B /* Tool */,
+				2E5494441FD8CCF300DB934B /* Extension */,
+			);
+			path = helper;
+			sourceTree = "<group>";
+		};
+		2E5494411FD8CC7B00DB934B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2E54947B1FD8D25600DB934B /* CWMessageCell.swift */,
+				2E54947D1FD8D29C00DB934B /* MessageContentView.swift */,
+				2E54947F1FD8D2AF00DB934B /* EmoticonMessageContentView.swift */,
+				2E5494811FD8D2BE00DB934B /* ImageMessageContentView.swift */,
+				2E5494831FD8D2C700DB934B /* TextMessageContentView.swift */,
+				2E5494851FD8D2D800DB934B /* CWChatUIConstant.swift */,
+				2E5494871FD8D2EC00DB934B /* CWTimeMessageCell.swift */,
+				2E5494891FD8D2FB00DB934B /* CWChatTextDisplayView.swift */,
+				2E54948B1FD8D30F00DB934B /* CWChatImageView.swift */,
+				2E5494781FD8D22000DB934B /* Layout */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2E5494421FD8CC8500DB934B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2E5494681FD8CDD800DB934B /* CWMessage.swift */,
+				2E5494661FD8CD6A00DB934B /* CWMessageModel.swift */,
+				2E5494741FD8CE7400DB934B /* CWMessageBody.swift */,
+				2E54946C1FD8CE3400DB934B /* CWFileMessageBody.swift */,
+				2E54946A1FD8CE2C00DB934B /* CWTextMessageBody.swift */,
+				2E54946E1FD8CE3A00DB934B /* CWImageMessageBody.swift */,
+				2E5494701FD8CE5100DB934B /* CWEmoticonMessageBody.swift */,
+				2E5494721FD8CE5700DB934B /* CWChatUser.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2E5494431FD8CC8E00DB934B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2E5494761FD8D05A00DB934B /* CWBaseMessageController.swift */,
+				2E9469861FD8E43D0000DC20 /* CWBaseMessageController+Keyboard.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2E5494441FD8CCF300DB934B /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				2E5494451FD8CCF300DB934B /* NSString+Chat.swift */,
+				2E5494461FD8CCF300DB934B /* NSString+PinYin.swift */,
+				2E5494471FD8CCF300DB934B /* UIApplication+CWChat.swift */,
+				2E5494481FD8CCF300DB934B /* UIBarButtonItem+Extensions.swift */,
+				2E5494491FD8CCF300DB934B /* UIButton+Extensions.swift */,
+				2E54944A1FD8CCF300DB934B /* UIColor+Extension.swift */,
+				2E54944B1FD8CCF300DB934B /* UIFont+Extension.swift */,
+				2E54944C1FD8CCF300DB934B /* UIImage+CWChat.swift */,
+				2E54944D1FD8CCF300DB934B /* UIImage+Extension.swift */,
+				2E54944E1FD8CCF300DB934B /* UIStoryboard+Extension.swift */,
+				2E54944F1FD8CCF300DB934B /* UITableView+Reusable.swift */,
+				2E5494501FD8CCF300DB934B /* UIView+Frame.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		2E54945D1FD8CD3B00DB934B /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				2E54945E1FD8CD3B00DB934B /* ChatTimeTool.swift */,
+				2E54945F1FD8CD3B00DB934B /* CWChatConst.swift */,
+				2E5494601FD8CD3B00DB934B /* CWPlayMessageAudio.swift */,
+				2E5494611FD8CD3B00DB934B /* CWUIUtility.swift */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		2E5494781FD8D22000DB934B /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				2E5494791FD8D22F00DB934B /* CWMessageViewLayout.swift */,
+				2E54948D1FD8D3CD00DB934B /* CWMessageLayoutAttributes.swift */,
+				2E54948F1FD8D3D200DB934B /* CWMessageLayoutSettings.swift */,
+			);
+			path = Layout;
+			sourceTree = "<group>";
+		};
+		2E5494911FD8D44800DB934B /* tool */ = {
+			isa = PBXGroup;
+			children = (
+				2E5494921FD8D45100DB934B /* CWTextLinePositionModifier.swift */,
+				2E5494941FD8D45800DB934B /* CWChatTextParser.swift */,
+			);
+			path = tool;
+			sourceTree = "<group>";
+		};
+		2E9469251FD8DDD30000DC20 /* CWInput */ = {
+			isa = PBXGroup;
+			children = (
+				2E9469261FD8DDD30000DC20 /* ChatToolBar */,
+				2E94692C1FD8DDD30000DC20 /* Emoticon */,
+				2E9469351FD8DDD30000DC20 /* Keyboard */,
+				2E94693A1FD8DDD30000DC20 /* More */,
+			);
+			path = CWInput;
+			sourceTree = "<group>";
+		};
+		2E9469261FD8DDD30000DC20 /* ChatToolBar */ = {
+			isa = PBXGroup;
+			children = (
+				2E9469271FD8DDD30000DC20 /* ChatToolBarStyle.swift */,
+				2E9469281FD8DDD30000DC20 /* CWChatKeyboard.swift */,
+				2E9469291FD8DDD30000DC20 /* CWChatToolBar.swift */,
+				2E94692A1FD8DDD30000DC20 /* CWInputTextView.swift */,
+				2E94692B1FD8DDD30000DC20 /* CWRecordButton.swift */,
+			);
+			path = ChatToolBar;
+			sourceTree = "<group>";
+		};
+		2E94692C1FD8DDD30000DC20 /* Emoticon */ = {
+			isa = PBXGroup;
+			children = (
+				2E94692D1FD8DDD30000DC20 /* EmoticonCell.swift */,
+				2E94692E1FD8DDD30000DC20 /* EmoticonGroup.swift */,
+				2E94692F1FD8DDD30000DC20 /* EmoticonInputView.swift */,
+				2E9469301FD8DDD30000DC20 /* EmoticonPageCell.swift */,
+				2E9469311FD8DDD30000DC20 /* EmoticonPageCellLayout.swift */,
+				2E9469321FD8DDD30000DC20 /* EmoticonPreviewer.swift */,
+				2E9469331FD8DDD30000DC20 /* EmoticonToolItemCell.swift */,
+				2E9469341FD8DDD30000DC20 /* EmoticonToolView.swift */,
+			);
+			path = Emoticon;
+			sourceTree = "<group>";
+		};
+		2E9469351FD8DDD30000DC20 /* Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				2E9469361FD8DDD30000DC20 /* InputTextView.swift */,
+				2E9469371FD8DDD30000DC20 /* Keyboard.swift */,
+				2E9469381FD8DDD30000DC20 /* RecordButton.swift */,
+				2E9469391FD8DDD30000DC20 /* ToolView.swift */,
+			);
+			path = Keyboard;
+			sourceTree = "<group>";
+		};
+		2E94693A1FD8DDD30000DC20 /* More */ = {
+			isa = PBXGroup;
+			children = (
+				2E94693B1FD8DDD30000DC20 /* CWMoreInputView.swift */,
+				2E94693C1FD8DDD30000DC20 /* MoreInputDataHelper.swift */,
+				2E94693D1FD8DDD30000DC20 /* MoreInputView.swift */,
+				2E94693E1FD8DDD30000DC20 /* MoreInputViewLayout.swift */,
+				2E94693F1FD8DDD30000DC20 /* MoreItem.swift */,
+				2E9469401FD8DDD30000DC20 /* MoreItemCell.swift */,
+			);
+			path = More;
+			sourceTree = "<group>";
+		};
+		2E9469581FD8DE110000DC20 /* Expression */ = {
+			isa = PBXGroup;
+			children = (
+				2E9469801FD8DE340000DC20 /* emoticons.bundle */,
+				2E9469821FD8DE3B0000DC20 /* Emotion.bundle */,
+				2E9469591FD8DE110000DC20 /* CWEmoticonDetailController.swift */,
+				2E94695A1FD8DE110000DC20 /* CWEmoticonListController.swift */,
+				2E94695B1FD8DE110000DC20 /* CWFeaturedEmoticonController.swift */,
+				2E94695C1FD8DE110000DC20 /* CWMoreEmoticonController.swift */,
+				2E94695D1FD8DE110000DC20 /* CWMyEmoticonListController.swift */,
+				2E9469841FD8DE760000DC20 /* CWBaseTableViewController.swift */,
+				2E94695E1FD8DE110000DC20 /* Model */,
+				2E9469611FD8DE110000DC20 /* Service */,
+				2E9469641FD8DE110000DC20 /* View */,
+			);
+			path = Expression;
+			sourceTree = "<group>";
+		};
+		2E94695E1FD8DE110000DC20 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2E94695F1FD8DE110000DC20 /* Emoticon.swift */,
+				2E9469601FD8DE110000DC20 /* EmoticonPackage.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2E9469611FD8DE110000DC20 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				2E9469621FD8DE110000DC20 /* EmoticonManager.swift */,
+				2E9469631FD8DE110000DC20 /* EmoticonService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		2E9469641FD8DE110000DC20 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2E9469651FD8DE110000DC20 /* EmoticonDetailCell.swift */,
+				2E9469661FD8DE110000DC20 /* EmoticonDetailFooterView.swift */,
+				2E9469671FD8DE110000DC20 /* EmoticonDetailHeaderView.swift */,
+				2E9469681FD8DE110000DC20 /* EmoticonListBannerCell.swift */,
+				2E9469691FD8DE110000DC20 /* EmoticonListCell.swift */,
+				2E94696A1FD8DE110000DC20 /* EmoticonListHeaderView.swift */,
+				2E94696B1FD8DE110000DC20 /* MoreEmoticonBannerCell.swift */,
+				2E94696C1FD8DE110000DC20 /* MoreEmoticonCell.swift */,
+				2E94696D1FD8DE110000DC20 /* MyEmoticonCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		556F47192EE61446A04B7B22 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2923E152CD439BEE89B8302C /* Pods-WeChatDemo.debug.xcconfig */,
+				CC9503219360A407A05D6360 /* Pods-WeChatDemo.release.xcconfig */,
+				C96D7656828EDFA4F9B37ABF /* Pods-WeChatDemoTests.debug.xcconfig */,
+				242425485CE9DD49A355809F /* Pods-WeChatDemoTests.release.xcconfig */,
+				97510ABA5FCE263A673899A0 /* Pods-WeChatDemoUITests.debug.xcconfig */,
+				2EB80A291585394370498D47 /* Pods-WeChatDemoUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B4CC2989AA5075D10039E198 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2E48F38146F3894031D636F0 /* Pods_WeChatDemo.framework */,
+				72DA7DF07DB8BCEA82BD6E7D /* Pods_WeChatDemoTests.framework */,
+				9B078FC5658352B4A07732F6 /* Pods_WeChatDemoUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +577,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2E54935C1FD7F91400DB934B /* Build configuration list for PBXNativeTarget "WeChatDemo" */;
 			buildPhases = (
+				CFC7A3E1E4C55B8B0D1FB237 /* [CP] Check Pods Manifest.lock */,
 				2E5493301FD7F91400DB934B /* Sources */,
 				2E5493311FD7F91400DB934B /* Frameworks */,
 				2E5493321FD7F91400DB934B /* Resources */,
+				215FC3476A6A7081E9DB12ED /* [CP] Embed Pods Frameworks */,
+				29ED5D9C9A0227848106DEB7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +597,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2E54935F1FD7F91400DB934B /* Build configuration list for PBXNativeTarget "WeChatDemoTests" */;
 			buildPhases = (
+				65A8B39C025BED3E9FDCD143 /* [CP] Check Pods Manifest.lock */,
 				2E5493441FD7F91400DB934B /* Sources */,
 				2E5493451FD7F91400DB934B /* Frameworks */,
 				2E5493461FD7F91400DB934B /* Resources */,
+				B1A896E058F79D139A849AE1 /* [CP] Embed Pods Frameworks */,
+				7D1CF548FC07154FA8659794 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +618,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2E5493621FD7F91400DB934B /* Build configuration list for PBXNativeTarget "WeChatDemoUITests" */;
 			buildPhases = (
+				083C7CB6C30F03B4C9A49A02 /* [CP] Check Pods Manifest.lock */,
 				2E54934F1FD7F91400DB934B /* Sources */,
 				2E5493501FD7F91400DB934B /* Frameworks */,
 				2E5493511FD7F91400DB934B /* Resources */,
+				10D7CB9833B763B3EAD0FEBF /* [CP] Embed Pods Frameworks */,
+				6BBFD18BF11893BA3B65CE70 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -233,8 +687,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E5493421FD7F91400DB934B /* LaunchScreen.storyboard in Resources */,
+				2E54949E1FD8DBE000DB934B /* chat_background.png in Resources */,
 				2E54933F1FD7F91400DB934B /* Assets.xcassets in Resources */,
+				2E9469831FD8DE3B0000DC20 /* Emotion.bundle in Resources */,
 				2E54933D1FD7F91400DB934B /* Main.storyboard in Resources */,
+				2E9469811FD8DE340000DC20 /* emoticons.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,13 +711,283 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		083C7CB6C30F03B4C9A49A02 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WeChatDemoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		10D7CB9833B763B3EAD0FEBF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WeChatDemoUITests/Pods-WeChatDemoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		215FC3476A6A7081E9DB12ED /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WeChatDemo/Pods-WeChatDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/CWActionSheet/CWActionSheet.framework",
+				"${BUILT_PRODUCTS_DIR}/CWShareView/CWShareView.framework",
+				"${BUILT_PRODUCTS_DIR}/FSPagerView/FSPagerView.framework",
+				"${BUILT_PRODUCTS_DIR}/Hue/Hue.framework",
+				"${BUILT_PRODUCTS_DIR}/KVOController/KVOController.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/OHHTTPStubs/OHHTTPStubs.framework",
+				"${BUILT_PRODUCTS_DIR}/PPBadgeViewSwift/PPBadgeViewSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SQLite.swift/SQLite.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyBeaver/SwiftyBeaver.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyImage/SwiftyImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/YYText/YYText.framework",
+				"${BUILT_PRODUCTS_DIR}/pop/pop.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CWActionSheet.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CWShareView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FSPagerView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hue.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KVOController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OHHTTPStubs.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PPBadgeViewSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SQLite.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyBeaver.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYText.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/pop.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WeChatDemo/Pods-WeChatDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		29ED5D9C9A0227848106DEB7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WeChatDemo/Pods-WeChatDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		65A8B39C025BED3E9FDCD143 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WeChatDemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6BBFD18BF11893BA3B65CE70 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WeChatDemoUITests/Pods-WeChatDemoUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7D1CF548FC07154FA8659794 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WeChatDemoTests/Pods-WeChatDemoTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B1A896E058F79D139A849AE1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WeChatDemoTests/Pods-WeChatDemoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CFC7A3E1E4C55B8B0D1FB237 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WeChatDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2E5493301FD7F91400DB934B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E9469441FD8DDD30000DC20 /* CWInputTextView.swift in Sources */,
+				2E9469481FD8DDD30000DC20 /* EmoticonInputView.swift in Sources */,
+				2E9469741FD8DE110000DC20 /* EmoticonPackage.swift in Sources */,
+				2E5494541FD8CCF300DB934B /* UIBarButtonItem+Extensions.swift in Sources */,
+				2E5494551FD8CCF300DB934B /* UIButton+Extensions.swift in Sources */,
+				2E94694D1FD8DDD30000DC20 /* EmoticonToolView.swift in Sources */,
+				2E9469571FD8DDD30000DC20 /* MoreItemCell.swift in Sources */,
+				2E54946B1FD8CE2C00DB934B /* CWTextMessageBody.swift in Sources */,
+				2E54945B1FD8CCF300DB934B /* UITableView+Reusable.swift in Sources */,
+				2E9469531FD8DDD30000DC20 /* MoreInputDataHelper.swift in Sources */,
+				2E5494931FD8D45100DB934B /* CWTextLinePositionModifier.swift in Sources */,
+				2E54945A1FD8CCF300DB934B /* UIStoryboard+Extension.swift in Sources */,
+				2E54945C1FD8CCF300DB934B /* UIView+Frame.swift in Sources */,
+				2E9469561FD8DDD30000DC20 /* MoreItem.swift in Sources */,
+				2E94697F1FD8DE110000DC20 /* MyEmoticonCell.swift in Sources */,
+				2E5494531FD8CCF300DB934B /* UIApplication+CWChat.swift in Sources */,
+				2E94694C1FD8DDD30000DC20 /* EmoticonToolItemCell.swift in Sources */,
+				2E9469781FD8DE110000DC20 /* EmoticonDetailFooterView.swift in Sources */,
+				2E94697A1FD8DE110000DC20 /* EmoticonListBannerCell.swift in Sources */,
+				2E5494731FD8CE5700DB934B /* CWChatUser.swift in Sources */,
+				2E5494511FD8CCF300DB934B /* NSString+Chat.swift in Sources */,
+				2E94694E1FD8DDD30000DC20 /* InputTextView.swift in Sources */,
 				2E54933A1FD7F91400DB934B /* ViewController.swift in Sources */,
+				2E9469521FD8DDD30000DC20 /* CWMoreInputView.swift in Sources */,
+				2E9469711FD8DE110000DC20 /* CWMoreEmoticonController.swift in Sources */,
+				2E54948C1FD8D30F00DB934B /* CWChatImageView.swift in Sources */,
+				2E5494651FD8CD3B00DB934B /* CWUIUtility.swift in Sources */,
+				2E5494691FD8CDD800DB934B /* CWMessage.swift in Sources */,
+				2E9469451FD8DDD30000DC20 /* CWRecordButton.swift in Sources */,
+				2E5494641FD8CD3B00DB934B /* CWPlayMessageAudio.swift in Sources */,
+				2E5494521FD8CCF300DB934B /* NSString+PinYin.swift in Sources */,
+				2E9469501FD8DDD30000DC20 /* RecordButton.swift in Sources */,
+				2E9469731FD8DE110000DC20 /* Emoticon.swift in Sources */,
+				2E5494571FD8CCF300DB934B /* UIFont+Extension.swift in Sources */,
+				2E54947C1FD8D25600DB934B /* CWMessageCell.swift in Sources */,
+				2E5494801FD8D2AF00DB934B /* EmoticonMessageContentView.swift in Sources */,
+				2E5494901FD8D3D200DB934B /* CWMessageLayoutSettings.swift in Sources */,
 				2E5493381FD7F91400DB934B /* AppDelegate.swift in Sources */,
+				2E9469771FD8DE110000DC20 /* EmoticonDetailCell.swift in Sources */,
+				2E54948A1FD8D2FB00DB934B /* CWChatTextDisplayView.swift in Sources */,
+				2E9469701FD8DE110000DC20 /* CWFeaturedEmoticonController.swift in Sources */,
+				2E94694F1FD8DDD30000DC20 /* Keyboard.swift in Sources */,
+				2E9469421FD8DDD30000DC20 /* CWChatKeyboard.swift in Sources */,
+				2E54946D1FD8CE3400DB934B /* CWFileMessageBody.swift in Sources */,
+				2E9469871FD8E43D0000DC20 /* CWBaseMessageController+Keyboard.swift in Sources */,
+				2E54946F1FD8CE3A00DB934B /* CWImageMessageBody.swift in Sources */,
+				2E9469461FD8DDD30000DC20 /* EmoticonCell.swift in Sources */,
+				2E9469491FD8DDD30000DC20 /* EmoticonPageCell.swift in Sources */,
+				2E5494711FD8CE5200DB934B /* CWEmoticonMessageBody.swift in Sources */,
+				2E9469411FD8DDD30000DC20 /* ChatToolBarStyle.swift in Sources */,
+				2E94696F1FD8DE110000DC20 /* CWEmoticonListController.swift in Sources */,
+				2E5494841FD8D2C700DB934B /* TextMessageContentView.swift in Sources */,
+				2E94697D1FD8DE110000DC20 /* MoreEmoticonBannerCell.swift in Sources */,
+				2E9469761FD8DE110000DC20 /* EmoticonService.swift in Sources */,
+				2E54947E1FD8D29C00DB934B /* MessageContentView.swift in Sources */,
+				2E9469851FD8DE760000DC20 /* CWBaseTableViewController.swift in Sources */,
+				2E5494821FD8D2BE00DB934B /* ImageMessageContentView.swift in Sources */,
+				2E94697C1FD8DE110000DC20 /* EmoticonListHeaderView.swift in Sources */,
+				2E9469751FD8DE110000DC20 /* EmoticonManager.swift in Sources */,
+				2E94697E1FD8DE110000DC20 /* MoreEmoticonCell.swift in Sources */,
+				2E94694B1FD8DDD30000DC20 /* EmoticonPreviewer.swift in Sources */,
+				2E5494561FD8CCF300DB934B /* UIColor+Extension.swift in Sources */,
+				2E5494951FD8D45800DB934B /* CWChatTextParser.swift in Sources */,
+				2E54947A1FD8D22F00DB934B /* CWMessageViewLayout.swift in Sources */,
+				2E9469541FD8DDD30000DC20 /* MoreInputView.swift in Sources */,
+				2E5494621FD8CD3B00DB934B /* ChatTimeTool.swift in Sources */,
+				2E9469431FD8DDD30000DC20 /* CWChatToolBar.swift in Sources */,
+				2E9469551FD8DDD30000DC20 /* MoreInputViewLayout.swift in Sources */,
+				2E5494881FD8D2EC00DB934B /* CWTimeMessageCell.swift in Sources */,
+				2E9469721FD8DE110000DC20 /* CWMyEmoticonListController.swift in Sources */,
+				2E5494861FD8D2D800DB934B /* CWChatUIConstant.swift in Sources */,
+				2E5494751FD8CE7400DB934B /* CWMessageBody.swift in Sources */,
+				2E9469511FD8DDD30000DC20 /* ToolView.swift in Sources */,
+				2E94696E1FD8DE110000DC20 /* CWEmoticonDetailController.swift in Sources */,
+				2E9469891FD8E52B0000DC20 /* CWChatKit.swift in Sources */,
+				2E9469791FD8DE110000DC20 /* EmoticonDetailHeaderView.swift in Sources */,
+				2E5494671FD8CD6A00DB934B /* CWMessageModel.swift in Sources */,
+				2E5494631FD8CD3B00DB934B /* CWChatConst.swift in Sources */,
+				2E9469471FD8DDD30000DC20 /* EmoticonGroup.swift in Sources */,
+				2E94697B1FD8DE110000DC20 /* EmoticonListCell.swift in Sources */,
+				2E54948E1FD8D3CD00DB934B /* CWMessageLayoutAttributes.swift in Sources */,
+				2E5494771FD8D05A00DB934B /* CWBaseMessageController.swift in Sources */,
+				2E94694A1FD8DDD30000DC20 /* EmoticonPageCellLayout.swift in Sources */,
+				2E5494591FD8CCF300DB934B /* UIImage+Extension.swift in Sources */,
+				2E5494581FD8CCF300DB934B /* UIImage+CWChat.swift in Sources */,
+				2E5494971FD8D4DB00DB934B /* Const.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +1151,7 @@
 		};
 		2E54935D1FD7F91400DB934B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2923E152CD439BEE89B8302C /* Pods-WeChatDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -438,6 +1166,7 @@
 		};
 		2E54935E1FD7F91400DB934B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC9503219360A407A05D6360 /* Pods-WeChatDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -452,6 +1181,7 @@
 		};
 		2E5493601FD7F91400DB934B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C96D7656828EDFA4F9B37ABF /* Pods-WeChatDemoTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -468,6 +1198,7 @@
 		};
 		2E5493611FD7F91400DB934B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 242425485CE9DD49A355809F /* Pods-WeChatDemoTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -484,6 +1215,7 @@
 		};
 		2E5493631FD7F91400DB934B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97510ABA5FCE263A673899A0 /* Pods-WeChatDemoUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -499,6 +1231,7 @@
 		};
 		2E5493641FD7F91400DB934B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EB80A291585394370498D47 /* Pods-WeChatDemoUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
