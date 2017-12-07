@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import SQLite.Swift
+//import SQLite.Swift
 
 /// 数据库管理
 class EmoticonManager {
@@ -29,10 +29,10 @@ class EmoticonManager {
     }
     
     // 主键
-    fileprivate let id = Expression<String>("id")
-
-    /// 拓展字端
-    fileprivate let ext1 = Expression<String>("ext1")
+//    fileprivate let id = Expression<String>("id")
+//
+//    /// 拓展字端
+//    fileprivate let ext1 = Expression<String>("ext1")
     
     
     /// 创建数据表

@@ -68,7 +68,6 @@
 		2E94694D1FD8DDD30000DC20 /* EmoticonToolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9469341FD8DDD30000DC20 /* EmoticonToolView.swift */; };
 		2E94694E1FD8DDD30000DC20 /* InputTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9469361FD8DDD30000DC20 /* InputTextView.swift */; };
 		2E94694F1FD8DDD30000DC20 /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9469371FD8DDD30000DC20 /* Keyboard.swift */; };
-		2E9469501FD8DDD30000DC20 /* RecordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9469381FD8DDD30000DC20 /* RecordButton.swift */; };
 		2E9469511FD8DDD30000DC20 /* ToolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9469391FD8DDD30000DC20 /* ToolView.swift */; };
 		2E9469521FD8DDD30000DC20 /* CWMoreInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E94693B1FD8DDD30000DC20 /* CWMoreInputView.swift */; };
 		2E9469531FD8DDD30000DC20 /* MoreInputDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E94693C1FD8DDD30000DC20 /* MoreInputDataHelper.swift */; };
@@ -190,7 +189,6 @@
 		2E9469341FD8DDD30000DC20 /* EmoticonToolView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonToolView.swift; sourceTree = "<group>"; };
 		2E9469361FD8DDD30000DC20 /* InputTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputTextView.swift; sourceTree = "<group>"; };
 		2E9469371FD8DDD30000DC20 /* Keyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keyboard.swift; sourceTree = "<group>"; };
-		2E9469381FD8DDD30000DC20 /* RecordButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordButton.swift; sourceTree = "<group>"; };
 		2E9469391FD8DDD30000DC20 /* ToolView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToolView.swift; sourceTree = "<group>"; };
 		2E94693B1FD8DDD30000DC20 /* CWMoreInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CWMoreInputView.swift; sourceTree = "<group>"; };
 		2E94693C1FD8DDD30000DC20 /* MoreInputDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreInputDataHelper.swift; sourceTree = "<group>"; };
@@ -467,7 +465,6 @@
 			children = (
 				2E9469361FD8DDD30000DC20 /* InputTextView.swift */,
 				2E9469371FD8DDD30000DC20 /* Keyboard.swift */,
-				2E9469381FD8DDD30000DC20 /* RecordButton.swift */,
 				2E9469391FD8DDD30000DC20 /* ToolView.swift */,
 			);
 			path = Keyboard;
@@ -745,45 +742,33 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-WeChatDemo/Pods-WeChatDemo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/CWActionSheet/CWActionSheet.framework",
-				"${BUILT_PRODUCTS_DIR}/CWShareView/CWShareView.framework",
 				"${BUILT_PRODUCTS_DIR}/FSPagerView/FSPagerView.framework",
 				"${BUILT_PRODUCTS_DIR}/Hue/Hue.framework",
 				"${BUILT_PRODUCTS_DIR}/KVOController/KVOController.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
-				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
-				"${BUILT_PRODUCTS_DIR}/OHHTTPStubs/OHHTTPStubs.framework",
-				"${BUILT_PRODUCTS_DIR}/PPBadgeViewSwift/PPBadgeViewSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/SQLite.swift/SQLite.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyBeaver/SwiftyBeaver.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyImage/SwiftyImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/YYText/YYText.framework",
-				"${BUILT_PRODUCTS_DIR}/pop/pop.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CWActionSheet.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CWShareView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FSPagerView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hue.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KVOController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OHHTTPStubs.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PPBadgeViewSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SQLite.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyBeaver.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYText.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/pop.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -921,7 +906,6 @@
 				2E9469451FD8DDD30000DC20 /* CWRecordButton.swift in Sources */,
 				2E5494641FD8CD3B00DB934B /* CWPlayMessageAudio.swift in Sources */,
 				2E5494521FD8CCF300DB934B /* NSString+PinYin.swift in Sources */,
-				2E9469501FD8DDD30000DC20 /* RecordButton.swift in Sources */,
 				2E9469731FD8DE110000DC20 /* Emoticon.swift in Sources */,
 				2E5494571FD8CCF300DB934B /* UIFont+Extension.swift in Sources */,
 				2E54947C1FD8D25600DB934B /* CWMessageCell.swift in Sources */,

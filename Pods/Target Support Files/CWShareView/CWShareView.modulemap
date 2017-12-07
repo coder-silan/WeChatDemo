@@ -1,6 +1,0 @@
-framework module CWShareView {
-  umbrella header "CWShareView-umbrella.h"
-
-  export *
-  module * { export * }
-}
