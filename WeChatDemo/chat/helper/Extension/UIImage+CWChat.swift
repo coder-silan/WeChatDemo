@@ -23,16 +23,7 @@ typealias CWAsset = Asset
 #endif
 
 enum Asset: String {
-  case Applogo = "Applogo"
-  case CellBlueSelected = "CellBlueSelected"
-  case CellGreySelected = "CellGreySelected"
-  case CellNotSelected = "CellNotSelected"
-  case CellRedSelected = "CellRedSelected"
-  case CellSelected = "CellSelected"
-  case FootStep = "FootStep"
-  case MessageTooShort = "MessageTooShort"
-
-  case BackBarItemImage = "backBarItemImage"
+  //case Applogo = "Applogo"
   case Button_disable = "button_disable"
   case Button_normal = "button_normal"
   case Button_select = "button_select"
@@ -42,16 +33,9 @@ enum Asset: String {
   case Chat_toolbar_keyboard_HL = "chat_toolbar_keyboard_HL"
   case Chat_toolbar_more = "chat_toolbar_more"
   case Chat_toolbar_more_HL = "chat_toolbar_more_HL"
-
-  case Contact_official_account = "contact_official_account"
-  case Contact_signature = "contact_signature"
- // case Contacts_add_friend = "contacts_add_friend"
   case Default_head = "default_head"
-
   case Receiver_background_highlight = "receiver_background_highlight"
   case Receiver_background_normal = "receiver_background_normal"
-//  case SearchBar_voice = "searchBar_voice"
-//  case SearchBar_voice_HL = "searchBar_voice_HL"
   case Sender_background_highlight = "sender_background_highlight"
   case Sender_background_normal = "sender_background_normal"
 

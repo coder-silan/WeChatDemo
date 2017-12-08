@@ -4,6 +4,12 @@ PODS:
   - Hue (3.0.1)
   - Kingfisher (4.5.0)
   - KVOController (1.2.0)
+  - PGActionSheet (1.0.8)
+  - PGImagePicker (1.1.1):
+    - PGActionSheet
+  - PGImagePickerKingfisher (1.0.3):
+    - Kingfisher
+    - PGImagePicker
   - RxCocoa (4.0.0):
     - RxSwift (~> 4.0)
   - RxSwift (4.0.0)
@@ -19,6 +25,8 @@ DEPENDENCIES:
   - Hue
   - Kingfisher
   - KVOController
+  - PGImagePicker
+  - PGImagePickerKingfisher
   - RxCocoa
   - RxSwift
   - SnapKit
@@ -33,6 +41,9 @@ SPEC CHECKSUMS:
   Hue: 93e852fa6211ab35922ad8c293f51c43d6c79eb2
   Kingfisher: 26ae0473102b77b575da51960c932431e3745407
   KVOController: d72ace34afea42468329623b3379ab3cd1d286b6
+  PGActionSheet: 50b9be19cbdb376cb11e15881baeb5e7347369bc
+  PGImagePicker: 48586d0f76efa3b04ca0cae1310be07ef96a6cdf
+  PGImagePickerKingfisher: a9e1fa9b0105e800ac6c6e887f0874328c039b08
   RxCocoa: d62846ca96495d862fa4c59ea7d87e5031d7340e
   RxSwift: fd680d75283beb5e2559486f3c0ff852f0d35334
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
@@ -41,6 +52,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: b4ca1b76f453de0d353e2a13c12bf7fb0cfff5c8
+PODFILE CHECKSUM: 6ee37370c81f27febd3d96b46c1bc54a205bc2ec
 
 COCOAPODS: 1.3.1

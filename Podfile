@@ -12,7 +12,10 @@ target 'WeChatDemo' do
   pod 'RxSwift'
   pod 'RxCocoa'
   pod 'Alamofire'
-  
+  #大图
+  pod 'PGImagePickerKingfisher'
+  pod 'PGImagePicker'
+
   # log
   pod 'SwiftyBeaver'
   
