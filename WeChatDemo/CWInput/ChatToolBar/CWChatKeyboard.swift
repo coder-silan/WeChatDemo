@@ -90,6 +90,7 @@ public class CWChatKeyboard: UIView {
     
     @objc func keyboardWillChangeFrame(_ notification: Notification) {
         
+        log.debug(self.chatToolBar.faceSelected)
         if self.chatToolBar.faceSelected {
             
             UIView.animate(withDuration: 0.25, delay: 0, options: .curveLinear, animations: {

@@ -11,6 +11,8 @@ import UIKit
 // 
 class CWMessageLayoutAttributes: UICollectionViewLayoutAttributes {
     
+    var issueTimeFrame: CGRect
+    
     var avaterFrame: CGRect
     
     var usernameFrame: CGRect
@@ -24,6 +26,7 @@ class CWMessageLayoutAttributes: UICollectionViewLayoutAttributes {
     var activityFrame: CGRect
     
     public override init() {
+        issueTimeFrame = CGRect.zero
         avaterFrame = CGRect.zero
         usernameFrame = CGRect.zero
         messageContainerFrame = CGRect.zero
@@ -37,7 +40,8 @@ class CWMessageLayoutAttributes: UICollectionViewLayoutAttributes {
         guard let copiedAttributes = super.copy(with: zone) as? CWMessageLayoutAttributes else {
             return super.copy(with: zone)
         }
-            
+        
+        copiedAttributes.issueTimeFrame = issueTimeFrame
         copiedAttributes.avaterFrame = avaterFrame
         copiedAttributes.usernameFrame = usernameFrame
         copiedAttributes.messageContainerFrame = messageContainerFrame

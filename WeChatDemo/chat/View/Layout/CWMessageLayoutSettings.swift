@@ -22,6 +22,8 @@ class CWMessageLayoutSettings {
     
     var kMessageToBottomPadding: CGFloat
 
+    //时间
+    var kIssueTimeSize: CGSize
     // 头像
     var kAvaterSize: CGSize
     // 昵称
@@ -39,6 +41,7 @@ class CWMessageLayoutSettings {
         kMessageToTopPadding = 10
         kMessageToBottomPadding = 10
         
+        kIssueTimeSize = CGSize(width: kSCREEN_WIDTH, height: 30)
         kUsernameSize = CGSize(width: 120, height: 20)
         kUsernameLeftPadding = 10
         

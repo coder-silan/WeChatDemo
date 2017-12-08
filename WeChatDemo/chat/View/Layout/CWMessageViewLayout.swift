@@ -79,7 +79,7 @@ extension CWMessageViewLayout {
             configure(attributes: attributes)
             
             // cell 高度
-            let heightOfCell = attributes.messageContainerFrame.height + kMessageCellBottomMargin + kMessageCellTopMargin
+            let heightOfCell = attributes.messageContainerFrame.height + kMessageCellBottomMargin + kMessageCellTopMargin + attributes.issueTimeFrame.height
 
             attributes.frame = CGRect(x: 0, y: contentHeight, width: kSCREEN_WIDTH, height: heightOfCell)
             
@@ -101,10 +101,16 @@ extension CWMessageViewLayout {
         }
         
         attributes.avaterFrame = avatarFrame(with: message)
-        
+        attributes.issueTimeFrame = issueTimeFrame(with: message)
         setupUsernameFrame(with: attributes, message: message)
         setupContainerFrame(with: attributes, message: message)
         setupStateFrame(with: attributes, message: message)
+    }
+    
+    //时间
+    func issueTimeFrame(with message:CWMessageModel) -> CGRect {
+        let size: CGSize = setting.kIssueTimeSize
+        return CGRect(origin: CGPoint.zero, size: size)
     }
     
     // 头像
@@ -113,9 +119,9 @@ extension CWMessageViewLayout {
         let origin: CGPoint
         if message.isSend {
             origin = CGPoint(x: collectionViewWidth - setting.kMessageToLeftPadding - size.width,
-                             y: setting.kMessageToTopPadding)
+                             y: setting.kMessageToTopPadding+setting.kIssueTimeSize.height)
         } else {
-            origin = CGPoint(x: setting.kMessageToLeftPadding, y: setting.kMessageToTopPadding)
+            origin = CGPoint(x: setting.kMessageToLeftPadding, y: setting.kMessageToTopPadding + setting.kIssueTimeSize.height)
         }
         return CGRect(origin: origin, size: size)
     }

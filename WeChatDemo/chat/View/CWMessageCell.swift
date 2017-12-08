@@ -57,6 +57,18 @@ class CWMessageCell: UICollectionViewCell {
     var message: CWMessageModel?
     
     // MARK: 属性
+    //发布时间
+    var issueTime: UILabel = {
+        let issueTime = UILabel()
+     //   issueTime.backgroundColor = UIColor.red
+        issueTime.font = UIFont.systemFont(ofSize: 12)
+        issueTime.text = "2017年12月08日09:46:33"
+        issueTime.textAlignment = NSTextAlignment.center
+        issueTime.textColor = UIColor(hex: "#999999")
+        return issueTime
+    }()
+    
+    
     /// 用户名称
     var usernameLabel:UILabel = {
         let usernameLabel = UILabel()
@@ -148,6 +160,7 @@ class CWMessageCell: UICollectionViewCell {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
+        self.contentView.addSubview(issueTime)
         self.contentView.addSubview(avatarImageView)
         self.contentView.addSubview(usernameLabel)
         self.contentView.addSubview(activityView)
@@ -277,6 +290,7 @@ extension CWMessageCell {
             return
         }
         
+        issueTime.frame = layoutAttributes.issueTimeFrame
         avatarImageView.frame = layoutAttributes.avaterFrame
         usernameLabel.frame = layoutAttributes.usernameFrame
         messageContentView.frame = layoutAttributes.messageContainerFrame
