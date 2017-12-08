@@ -9,72 +9,8 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "WeChatDemo/chat/Controller/CWBaseMessageController.swift"
-            timestampString = "534392286.639697"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "189"
-            endingLineNumber = "189"
-            landmarkName = "messageCellDidTap(_:link:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "WeChatDemo.CWBaseMessageController.messageCellDidTap(WeChatDemo.CWMessageCell, link: Foundation.URL) -&gt; ()"
-                  moduleName = "WeChatDemo"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/maomao/Desktop/day%20by%20day/WeChatDemo/WeChatDemo/chat/Controller/CWBaseMessageController.swift"
-                  timestampString = "534392286.759585"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "189"
-                  endingLineNumber = "189"
-                  offsetFromSymbolStart = "25">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "implicit closure #1 : @autoclosure () -&gt; Any in WeChatDemo.CWBaseMessageController.messageCellDidTap(WeChatDemo.CWMessageCell, link: Foundation.URL) -&gt; ()"
-                  moduleName = "WeChatDemo"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/maomao/Desktop/day%20by%20day/WeChatDemo/WeChatDemo/chat/Controller/CWBaseMessageController.swift"
-                  timestampString = "534392286.762417"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "189"
-                  endingLineNumber = "189"
-                  offsetFromSymbolStart = "4">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "WeChatDemo/chat/Controller/CWBaseMessageController.swift"
-            timestampString = "534392286.639774"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "194"
-            endingLineNumber = "194"
-            landmarkName = "messageCellDidTap(_:phone:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "WeChatDemo/CWInput/Keyboard/Keyboard.swift"
-            timestampString = "534392286.639827"
+            timestampString = "534393436.900231"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "120"
@@ -90,7 +26,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "WeChatDemo/CWInput/Keyboard/Keyboard.swift"
-            timestampString = "534392286.639876"
+            timestampString = "534393436.900278"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "131"
@@ -106,7 +42,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "WeChatDemo/CWInput/Keyboard/Keyboard.swift"
-            timestampString = "534392286.639921"
+            timestampString = "534393436.90032"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "108"

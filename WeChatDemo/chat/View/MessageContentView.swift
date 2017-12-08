@@ -9,8 +9,21 @@
 import UIKit
 
 protocol MessageContentViewDelegate: NSObjectProtocol {
-    
+
     // 点击
+    /// 点击cell文字中的URL
+    ///
+    /// - Parameters:
+    ///   - cell: cell
+    ///   - link: link
+    func messageCellDidTapUrl(_ cell: MessageContentView, link: URL)
+    
+    /// 点击cell文字中的电话
+    ///
+    /// - Parameters:
+    ///   - cell: cell
+    ///   - phone: phone
+    func messageCellDidTapPhone(_ cell: MessageContentView, phone: String)
     
 }
 

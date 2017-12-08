@@ -20,7 +20,7 @@ class CWMessageModel: NSObject {
     private var message: CWMessage
     
     public var isSend: Bool {
-        return message.direction == .receive
+        return message.direction == .send
     }
     
     public var messageBody: CWMessageBody {

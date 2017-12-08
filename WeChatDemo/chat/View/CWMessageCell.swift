@@ -96,7 +96,6 @@ class CWMessageCell: UICollectionViewCell {
         
         let messageContentView: MessageContentView
         let messageType = CWMessageType(identifier: self.reuseIdentifier!)
-        
         switch messageType {
         case .text:
             messageContentView = TextMessageContentView()
@@ -125,7 +124,7 @@ class CWMessageCell: UICollectionViewCell {
         self.tapGestureRecognizer.require(toFail: self.longPressGestureRecognizer)
         
         self.contentView.addSubview(messageContentView)
-
+        messageContentView.delegate = self
         return messageContentView
     }()
     
@@ -301,6 +300,17 @@ extension CWMessageCell {
         activityView.frame = layoutAttributes.activityFrame
         errorButton.frame = layoutAttributes.errorFrame
 
+    }
+    
+}
+
+extension CWMessageCell: MessageContentViewDelegate{
+    func messageCellDidTapUrl(_ cell: MessageContentView, link: URL) {
+        self.delegate?.messageCellDidTap(self, link: link)
+    }
+    
+    func messageCellDidTapPhone(_ cell: MessageContentView, phone: String) {
+        self.delegate?.messageCellDidTap(self, phone: phone)
     }
     
 }

@@ -10,6 +10,7 @@ import UIKit
 import YYText
 
 class TextMessageContentView: MessageContentView {
+    
     // 文本
     private lazy var messageLabel: YYLabel = {
         let messageLabel = YYLabel()
@@ -68,22 +69,19 @@ class TextMessageContentView: MessageContentView {
             return
         }
         
-        guard let info = hightlight.userInfo, info.count > 0,
-            let delegate = self.delegate else {
-                return
+        guard let info = hightlight.userInfo, info.count > 0 else {
+            return
         }
+    
+//        guard let delegate = self.delegate else {
+//        return
+//        }
         
         if let phone = info[kChatTextKeyPhone] as? String {
-            //delegate.messageCellDidTapPhone(self, phone: phone)
+            delegate?.messageCellDidTapPhone(self, phone: phone)
         }
         else if let URLString = info[kChatTextKeyURL] as? String, let URL = URL(string: URLString) {
-            //delegate.messageCellDidTapLink(self, link: URL)
+            delegate?.messageCellDidTapUrl(self, link: URL)
         }
     }
-    
-    
-    // 配置menuAction
-    
-    
-    
 }
