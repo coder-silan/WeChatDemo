@@ -161,35 +161,8 @@ extension CWBaseMessageController: CWMessageCellDelegate {
         
         switch message.messageType{
         case .image:
-            let imagebody:CWImageMessageBody = message.messageBody as! CWImageMessageBody
             
-            if message.isSend{
-                
-                let imageView = UIImageView()
-                imageView.kf.setImage(with:URL(fileURLWithPath: imagebody.originalLocalPath as Any as! String))
-                
-                let imagePicker = PGImagePicker(currentImageView: imageView)
-                present(imagePicker, animated: false, completion: nil)
-            }else{
-                print(imagebody.originalURL as Any)
-                let imageView = UIImageView()
-                //必须得有image 且image有size  不然会报错
-                imageView.kf.setImage(with:URL(fileURLWithPath: imagebody.originalLocalPath as Any as! String))
-                
-                let imagePicker = PGImagePickerKingfisher(currentImageView: imageView, imageViews: [imageView])
-                imagePicker.imageUrls = ["https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1512733184643&di=fb91a68edf106fddd03c16a6ef8da2b3&imgtype=0&src=http%3A%2F%2Fattachments.gfan.com%2Fforum%2Fattachments2%2Fday_111124%2F11112420337ad0f91dbfd042d3.jpg"]
-                imagePicker.indicatorType = .activity
-               // imagePicker.placeholder = UIImage(named: "projectlist_06")
-                present(imagePicker, animated: false, completion: nil)
-
-            }
-        case .voice:
-            
-            log.debug("点击声音")
-        case .location:
-
-            log.debug("地址")
-
+            chatImageClick(message: message)
             
         default:
             log.debug("其他类型")
@@ -206,11 +179,41 @@ extension CWBaseMessageController: CWMessageCellDelegate {
 
     }
     
+    /// 大图点击的回调方法
+    func chatImageClick(message: CWMessageModel) {
+        
+        let imagebody:CWImageMessageBody = message.messageBody as! CWImageMessageBody
+        
+        if message.isSend{
+            
+            let imageView = UIImageView()
+            imageView.kf.setImage(with:URL(fileURLWithPath: imagebody.originalLocalPath as Any as! String))
+            
+            let imagePicker = PGImagePicker(currentImageView: imageView)
+            present(imagePicker, animated: false, completion: nil)
+            
+        }else{
+            
+           // print(imagebody.originalURL as Any)
+            let url:String = "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1512733184643&di=fb91a68edf106fddd03c16a6ef8da2b3&imgtype=0&src=http%3A%2F%2Fattachments.gfan.com%2Fforum%2Fattachments2%2Fday_111124%2F11112420337ad0f91dbfd042d3.jpg"
+            
+            imagebody.originalURL = URL(string: url)
+            let imageView = UIImageView()
+            //必须得有image 且image有size  不然会报错
+            imageView.kf.setImage(with:imagebody.originalURL, placeholder: UIImage(named: "default_head"))
+            
+            let imagePicker = PGImagePickerKingfisher(currentImageView: imageView, imageViews: [imageView])
+            imagePicker.imageUrls = [url]
+            imagePicker.indicatorType = .activity
+            // imagePicker.placeholder = UIImage(named: "projectlist_06")
+            present(imagePicker, animated: false, completion: nil)
+        }
+    }
+    
     func messageCellDidTap(_ cell: CWMessageCell, link: URL) {
         
         let viewController = ChatWebViewController(URLString: link)
         self.navigationController?.pushViewController(viewController, animated: true)
-        log.debug("webView")
     }
     
     func messageCellDidTap(_ cell: CWMessageCell, phone: String) {
