@@ -184,10 +184,10 @@ extension CWBaseMessageController: CWMessageCellDelegate {
     }
     
     func messageCellDidTap(_ cell: CWMessageCell, link: URL) {
-//        let webViewController = CWWebViewController(url: link)
-//        self.navigationController?.pushViewController(webViewController, animated: true)
+        
+        let viewController = ChatWebViewController(URLString: link)
+        self.navigationController?.pushViewController(viewController, animated: true)
         log.debug("webView")
-
     }
     
     func messageCellDidTap(_ cell: CWMessageCell, phone: String) {
