@@ -41,30 +41,6 @@ public struct ChatSessionCellUI {
     static let headerImageViewTopPadding:CGFloat = 10.0
 }
 
-/*
-
-let kTimeMessageCellHeight: CGFloat = 30.0
-
-// cell布局中的间距
-let kMessageCellMargin: CGFloat =  10.0
-
-/// 头像
-let kAvaterImageViewWidth:   CGFloat      = 40.0
-let kAvaterImageViewMargin:  CGFloat      = 10.0
-
-/// 名称
-let kNameLabelHeight: CGFloat =   14.0
-let kNameLabelSpaceX: CGFloat =   12.0
-let kNamelabelSpaceY: CGFloat =   1.0
-
-
-let kAvatarToMessageContent:    CGFloat = 5.0
-let kMessageCellEdgeOffset:     CGFloat = 6.0
-
-public let kChatTextAttribute = [NSAttributedStringKey.foregroundColor:UIColor.black,
-                                 NSAttributedStringKey.font: UIFont.fontTextMessageText()]
-
-*/
 
 
 

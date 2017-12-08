@@ -41,3 +41,4 @@ public protocol CWMessageBody: CWMessageCoding {
     /// 消息类型
     var type: CWMessageType { get set}
 }
+

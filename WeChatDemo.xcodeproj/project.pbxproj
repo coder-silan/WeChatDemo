@@ -44,8 +44,6 @@
 		2E5494821FD8D2BE00DB934B /* ImageMessageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5494811FD8D2BE00DB934B /* ImageMessageContentView.swift */; };
 		2E5494841FD8D2C700DB934B /* TextMessageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5494831FD8D2C700DB934B /* TextMessageContentView.swift */; };
 		2E5494861FD8D2D800DB934B /* CWChatUIConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5494851FD8D2D800DB934B /* CWChatUIConstant.swift */; };
-		2E5494881FD8D2EC00DB934B /* CWTimeMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5494871FD8D2EC00DB934B /* CWTimeMessageCell.swift */; };
-		2E54948A1FD8D2FB00DB934B /* CWChatTextDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5494891FD8D2FB00DB934B /* CWChatTextDisplayView.swift */; };
 		2E54948C1FD8D30F00DB934B /* CWChatImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E54948B1FD8D30F00DB934B /* CWChatImageView.swift */; };
 		2E54948E1FD8D3CD00DB934B /* CWMessageLayoutAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E54948D1FD8D3CD00DB934B /* CWMessageLayoutAttributes.swift */; };
 		2E5494901FD8D3D200DB934B /* CWMessageLayoutSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E54948F1FD8D3D200DB934B /* CWMessageLayoutSettings.swift */; };
@@ -149,8 +147,6 @@
 		2E5494811FD8D2BE00DB934B /* ImageMessageContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageMessageContentView.swift; sourceTree = "<group>"; };
 		2E5494831FD8D2C700DB934B /* TextMessageContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextMessageContentView.swift; sourceTree = "<group>"; };
 		2E5494851FD8D2D800DB934B /* CWChatUIConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CWChatUIConstant.swift; sourceTree = "<group>"; };
-		2E5494871FD8D2EC00DB934B /* CWTimeMessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CWTimeMessageCell.swift; sourceTree = "<group>"; };
-		2E5494891FD8D2FB00DB934B /* CWChatTextDisplayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CWChatTextDisplayView.swift; sourceTree = "<group>"; };
 		2E54948B1FD8D30F00DB934B /* CWChatImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CWChatImageView.swift; sourceTree = "<group>"; };
 		2E54948D1FD8D3CD00DB934B /* CWMessageLayoutAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CWMessageLayoutAttributes.swift; sourceTree = "<group>"; };
 		2E54948F1FD8D3D200DB934B /* CWMessageLayoutSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CWMessageLayoutSettings.swift; sourceTree = "<group>"; };
@@ -313,8 +309,6 @@
 				2E5494811FD8D2BE00DB934B /* ImageMessageContentView.swift */,
 				2E5494831FD8D2C700DB934B /* TextMessageContentView.swift */,
 				2E5494851FD8D2D800DB934B /* CWChatUIConstant.swift */,
-				2E5494871FD8D2EC00DB934B /* CWTimeMessageCell.swift */,
-				2E5494891FD8D2FB00DB934B /* CWChatTextDisplayView.swift */,
 				2E54948B1FD8D30F00DB934B /* CWChatImageView.swift */,
 				2E5494781FD8D22000DB934B /* Layout */,
 			);
@@ -832,7 +826,6 @@
 				2E5494801FD8D2AF00DB934B /* EmoticonMessageContentView.swift in Sources */,
 				2E5494901FD8D3D200DB934B /* CWMessageLayoutSettings.swift in Sources */,
 				2E5493381FD7F91400DB934B /* AppDelegate.swift in Sources */,
-				2E54948A1FD8D2FB00DB934B /* CWChatTextDisplayView.swift in Sources */,
 				2E94694F1FD8DDD30000DC20 /* Keyboard.swift in Sources */,
 				2E9469421FD8DDD30000DC20 /* CWChatKeyboard.swift in Sources */,
 				2E8E393B1FDA6F3600080E68 /* ChatWebViewController.swift in Sources */,
@@ -856,7 +849,6 @@
 				2E5494621FD8CD3B00DB934B /* ChatTimeTool.swift in Sources */,
 				2E9469431FD8DDD30000DC20 /* CWChatToolBar.swift in Sources */,
 				2E9469551FD8DDD30000DC20 /* MoreInputViewLayout.swift in Sources */,
-				2E5494881FD8D2EC00DB934B /* CWTimeMessageCell.swift in Sources */,
 				2E5494861FD8D2D800DB934B /* CWChatUIConstant.swift in Sources */,
 				2E5494751FD8CE7400DB934B /* CWMessageBody.swift in Sources */,
 				2E9469511FD8DDD30000DC20 /* ToolView.swift in Sources */,
