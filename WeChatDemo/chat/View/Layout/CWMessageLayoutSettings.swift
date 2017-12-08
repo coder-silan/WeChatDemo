@@ -37,7 +37,7 @@ class CWMessageLayoutSettings {
     
     private init() {
         kAvaterSize = CGSize(width: 40, height: 40)
-        kMessageToLeftPadding = 10
+        kMessageToLeftPadding = 20
         kMessageToTopPadding = 10
         kMessageToBottomPadding = 10
         

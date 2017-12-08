@@ -84,6 +84,8 @@ class CWMessageCell: UICollectionViewCell {
         avatarImageView.contentMode = .scaleAspectFit
         avatarImageView.backgroundColor = UIColor.gray
         avatarImageView.isUserInteractionEnabled = true
+        avatarImageView.layer.masksToBounds = true
+        avatarImageView.layer.cornerRadius = 20.0
         let tap = UITapGestureRecognizer(target: self, action: #selector(avatarViewDidTapDown(_:)))
         avatarImageView.addGestureRecognizer(tap)
         return avatarImageView
