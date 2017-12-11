@@ -117,11 +117,11 @@ public class EmoticonInputView: UIView {
             if group.type == .normal {
                 row = 3
                 column = 8
-                page = Int(ceil(Float(group.count) / Float(row*column-1)))
+                page = Int(ceil(Float(group.count) / Float(row*column)))
             } else {
                 row = 2
                 column = 4
-                // 不需要删除按钮
+                // 不需要删除按钮 Float(row*column-1)))
                 page = Int(ceil(Float(group.count) / Float(row*column)))
             }
             let info = EmoticonGroupInfo(row: row, column: column, page: page, currentIndex: 0)
@@ -224,7 +224,7 @@ extension EmoticonInputView: EmoticonPageCellDelegate {
             self.delegate?.emoticonInputView(self, didSelect: emoticon)
         } else {
             //删除按钮
-            self.delegate?.didPressDelete(self)
+            //self.delegate?.didPressDelete(self)
         }
     }
     

@@ -74,11 +74,11 @@
 		2E9469571FD8DDD30000DC20 /* MoreItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9469401FD8DDD30000DC20 /* MoreItemCell.swift */; };
 		2E9469731FD8DE110000DC20 /* Emoticon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E94695F1FD8DE110000DC20 /* Emoticon.swift */; };
 		2E9469751FD8DE110000DC20 /* EmoticonManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9469621FD8DE110000DC20 /* EmoticonManager.swift */; };
-		2E9469811FD8DE340000DC20 /* emoticons.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2E9469801FD8DE340000DC20 /* emoticons.bundle */; };
 		2E9469831FD8DE3B0000DC20 /* Emotion.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2E9469821FD8DE3B0000DC20 /* Emotion.bundle */; };
 		2E9469851FD8DE760000DC20 /* CWBaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9469841FD8DE760000DC20 /* CWBaseTableViewController.swift */; };
 		2E9469871FD8E43D0000DC20 /* CWBaseMessageController+Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9469861FD8E43D0000DC20 /* CWBaseMessageController+Keyboard.swift */; };
 		2E9469891FD8E52B0000DC20 /* CWChatKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9469881FD8E52A0000DC20 /* CWChatKit.swift */; };
+		2EBBED231FDE1D770019B7F9 /* emoticons.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2EBBED221FDE1D770019B7F9 /* emoticons.bundle */; };
 		93353B1A7003F6E9F68ABF7E /* Pods_WeChatDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E48F38146F3894031D636F0 /* Pods_WeChatDemo.framework */; };
 		A29837DD5B2747FAAED9C4F9 /* Pods_WeChatDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B078FC5658352B4A07732F6 /* Pods_WeChatDemoUITests.framework */; };
 /* End PBXBuildFile section */
@@ -176,12 +176,12 @@
 		2E9469401FD8DDD30000DC20 /* MoreItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreItemCell.swift; sourceTree = "<group>"; };
 		2E94695F1FD8DE110000DC20 /* Emoticon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Emoticon.swift; sourceTree = "<group>"; };
 		2E9469621FD8DE110000DC20 /* EmoticonManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonManager.swift; sourceTree = "<group>"; };
-		2E9469801FD8DE340000DC20 /* emoticons.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = emoticons.bundle; sourceTree = "<group>"; };
 		2E9469821FD8DE3B0000DC20 /* Emotion.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Emotion.bundle; sourceTree = "<group>"; };
 		2E9469841FD8DE760000DC20 /* CWBaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CWBaseTableViewController.swift; sourceTree = "<group>"; };
 		2E9469861FD8E43D0000DC20 /* CWBaseMessageController+Keyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CWBaseMessageController+Keyboard.swift"; sourceTree = "<group>"; };
 		2E9469881FD8E52A0000DC20 /* CWChatKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CWChatKit.swift; sourceTree = "<group>"; };
 		2EB80A291585394370498D47 /* Pods-WeChatDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeChatDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeChatDemoUITests/Pods-WeChatDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2EBBED221FDE1D770019B7F9 /* emoticons.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = emoticons.bundle; sourceTree = "<group>"; };
 		72DA7DF07DB8BCEA82BD6E7D /* Pods_WeChatDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeChatDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		97510ABA5FCE263A673899A0 /* Pods-WeChatDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeChatDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeChatDemoUITests/Pods-WeChatDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9B078FC5658352B4A07732F6 /* Pods_WeChatDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeChatDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -448,7 +448,7 @@
 		2E9469581FD8DE110000DC20 /* Expression */ = {
 			isa = PBXGroup;
 			children = (
-				2E9469801FD8DE340000DC20 /* emoticons.bundle */,
+				2EBBED221FDE1D770019B7F9 /* emoticons.bundle */,
 				2E9469821FD8DE3B0000DC20 /* Emotion.bundle */,
 			);
 			path = Expression;
@@ -598,7 +598,7 @@
 				2E54933F1FD7F91400DB934B /* Assets.xcassets in Resources */,
 				2E9469831FD8DE3B0000DC20 /* Emotion.bundle in Resources */,
 				2E54933D1FD7F91400DB934B /* Main.storyboard in Resources */,
-				2E9469811FD8DE340000DC20 /* emoticons.bundle in Resources */,
+				2EBBED231FDE1D770019B7F9 /* emoticons.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -68,32 +68,6 @@ class EmoticonToolView: UIView {
         return sendButton
     }()
     
-    // 设置
-//    let settingButton: UIButton = {
-//        let settingButton = UIButton(type: .custom)
-//
-//        settingButton.contentEdgeInsets = UIEdgeInsetsMake(0, 10, 0, 0)
-//        settingButton.setImage(UIImage(named: "EmotionsSetting"), for: .normal)
-//        settingButton.setBackgroundImage(UIImage(named: "EmotionsSendBtnGrey"), for: .normal)
-//        settingButton.setBackgroundImage(UIImage(named: "EmotionsSendBtnGrey"), for: .highlighted)
-//
-//        return settingButton
-//    }()
-    
-//    lazy var addButton: UIButton = {
-//        let addButton = UIButton(type: .custom)
-//        addButton.setImage(UIImage(named: "EmotionsBagAdd"), for: .normal)
-//        addButton.frame = CGRect(x: 0, y: 0, width: kItemWidth, height: self.height)
-//
-//        // 添加一条线
-//        let line: CALayer = CALayer()
-//        line.backgroundColor = UIColor(white: 0.9, alpha: 1.0).cgColor
-//        line.frame = CGRect(x: kItemWidth-0.5, y: 8, width: 0.5, height: self.height - 2*8)
-//        addButton.layer.addSublayer(line)
-//
-//        return addButton
-//    }()
-    
     func loadData(_ groupList: [EmoticonGroup]) {
         if groupList == self.groupList {
             return

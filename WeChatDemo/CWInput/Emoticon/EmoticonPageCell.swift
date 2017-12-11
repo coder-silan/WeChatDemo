@@ -117,32 +117,32 @@ extension EmoticonPageCell: UICollectionViewDataSource, UICollectionViewDelegate
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! EmoticonCell
-        
-        var emoticonOfPage = groupInfo.onePageCount - 1
+        //如果最后为删除按钮  则onePageCount - 1 
+        var emoticonOfPage = groupInfo.onePageCount
         // 先判断表情是否为大表情
         if group.type == .big {
             emoticonOfPage = groupInfo.onePageCount
         }
         
         // 最后一个cell 则显示删除按钮
-        if indexPath.row == emoticonOfPage && group.type == .normal {
-            cell.isDelete = true
+//        if indexPath.row == emoticonOfPage && group.type == .normal {
+//            cell.isDelete = true
+//            cell.emoticon = nil
+//        } else {
+//
+//        }
+        let index = indexPath.row + emoticonOfPage*indexPath.section
+        if index >= group.count {
             cell.emoticon = nil
         } else {
-            cell.isDelete = false
-            let index = indexPath.row + emoticonOfPage*indexPath.section
-            if index >= group.count {
-                cell.emoticon = nil
-            } else {
-                cell.emoticon = group.emoticons[index]
-            }
+            cell.emoticon = group.emoticons[index]
         }
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        var emoticonOfPage = groupInfo.onePageCount - 1
+        var emoticonOfPage = groupInfo.onePageCount
         // 先判断表情是否为大表情
         if group.type == .big {
             emoticonOfPage = groupInfo.onePageCount

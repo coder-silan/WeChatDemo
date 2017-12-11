@@ -55,14 +55,15 @@ public class CWBaseMessageController: UIViewController {
         self.view.addSubview(collectionView)
         
         var groupList = [EmoticonGroup]()
-        if let qqemoticon = EmoticonGroup(identifier: "com.qq.classic") {
+        if let qqemoticon = EmoticonGroup(identifier: "com.apple.emoji") {
+            qqemoticon.type = .normal
             groupList.append(qqemoticon)
         }
         
-        if let liemoticon = EmoticonGroup(identifier: "cn.com.a-li") {
-            liemoticon.type = .big
-            groupList.append(liemoticon)
-        }
+//        if let liemoticon = EmoticonGroup(identifier: "cn.com.a-li") {
+//            liemoticon.type = .big
+//            groupList.append(liemoticon)
+//        }
         
         keyboard.delegate = self
         keyboard.emoticonInputView.loadData(groupList)

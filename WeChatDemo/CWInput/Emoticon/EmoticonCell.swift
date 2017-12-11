@@ -32,32 +32,30 @@ class EmoticonCell: UICollectionViewCell {
         let titleLabel = UILabel()
         titleLabel.textColor = UIColor.gray
         titleLabel.textAlignment = .center
-        titleLabel.font = UIFont.systemFont(ofSize: 12)
+        titleLabel.font = UIFont.systemFont(ofSize: 20)
+        titleLabel.size = CGSize(width: 32, height: 32)
+
         return titleLabel
     }() 
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.contentView.addSubview(imageView)
+        //self.contentView.addSubview(imageView)
         self.contentView.addSubview(titleLabel)
     }
     
     func updateContent() {
         // 先简单判断 后期加上 网络表情的处理
-        if isDelete {
-            imageView.image = UIImage(named: "DeleteEmoticonBtn")
-        } else {
-            if let emoticon = emoticon {
-                imageView.kf.setImage(with: emoticon.originalUrl)
-                if emoticon.type == .big {
-                    titleLabel.text = emoticon.title
-                } else {
-                    titleLabel.text = nil
-                }
+        if let emoticon = emoticon {
+            //imageView.kf.setImage(with: emoticon.title as! Resource)
+            if emoticon.type == .big {
+                titleLabel.text = emoticon.title
             } else {
-                imageView.image = nil
-                titleLabel.text = nil
+                titleLabel.text = emoticon.title
             }
+        } else {
+            // imageView.image = nil
+            titleLabel.text = nil
         }
     }
     
@@ -66,10 +64,10 @@ class EmoticonCell: UICollectionViewCell {
         if emoticon?.type == .big {
             imageView.size = CGSize(width: 60, height: 55)
         } else {
-            imageView.size = CGSize(width: 32, height: 32)
+            titleLabel.size = CGSize(width: 32, height: 32)
         }
-        imageView.center = CGPoint(x: self.bounds.midX, y: self.bounds.midY)
-        titleLabel.frame = CGRect(x: 0, y: imageView.bottom, width: self.bounds.width, height: 12)
+        titleLabel.center = CGPoint(x: self.bounds.midX, y: self.bounds.midY)
+        //titleLabel.frame = CGRect(x: 0, y: imageView.bottom, width: self.bounds.width, height: 12)
     }
     
     required init?(coder aDecoder: NSCoder) {

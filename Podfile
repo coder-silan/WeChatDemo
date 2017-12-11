@@ -21,7 +21,6 @@ target 'WeChatDemo' do
   
   pod 'CWActionSheet'
   # tool
-  pod 'Hue'
   pod 'SwiftyJSON'
   pod 'KVOController'
   # Pods for WeChatDemo
