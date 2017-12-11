@@ -318,7 +318,7 @@ extension CWChatKeyboard: EmoticonInputViewDelegate {
         // 如果是大图表情 则直接发送, 小表情则拼接文字
         if emoticon.type == .normal {
             if let title = emoticon.title {
-                chatToolBar.inputTextView.insertText("[\(title)]")
+                chatToolBar.inputTextView.insertText(title)
             }
         } else {
             self.delegate?.keyboard(self, sendEmoticon: emoticon)
