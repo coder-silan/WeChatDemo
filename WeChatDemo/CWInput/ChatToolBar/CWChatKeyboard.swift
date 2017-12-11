@@ -90,7 +90,7 @@ public class CWChatKeyboard: UIView {
     
     @objc func keyboardWillChangeFrame(_ notification: Notification) {
         
-        log.debug(self.chatToolBar.faceSelected)
+        //log.debug(self.chatToolBar.faceSelected)
         if self.chatToolBar.faceSelected {
             
             UIView.animate(withDuration: 0.25, delay: 0, options: .curveLinear, animations: {
@@ -163,6 +163,14 @@ public class CWChatKeyboard: UIView {
                 else if ((beginFrame.minY-endFrame.minY<0) && duration == 0) {
                     self.lastChatKeyboardY = self.y
                     self.y = targetY
+                    self.updateAssociateTableViewFrame()
+                }else{
+                    print("处理键盘之前弹出问题")
+                    self.lastChatKeyboardY = self.y
+                    self.y = targetY
+                    
+                    self.moreInputView.y = self.height
+                    self.emoticonInputView.y = self.height
                     self.updateAssociateTableViewFrame()
                 }
                 

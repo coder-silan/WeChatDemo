@@ -7,9 +7,8 @@
 //
 
 import UIKit
-import SwiftyBeaver
+//import SwiftyBeaver
 
-let log = SwiftyBeaver.self
 
 
 @UIApplicationMain
@@ -20,20 +19,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        setupLogger()
 
         return true
     }
 
     ///设置Log日志
-    func setupLogger() {
-        // add log destinations. at least one is needed!
-        let console = ConsoleDestination()  // log to Xcode Console
-        console.minLevel = .debug // just log .info, .warning & .error
-        let file = FileDestination()  // log to default swiftybeaver.log file
-        log.addDestination(console)
-        log.addDestination(file)
-    }
+//    func setupLogger() {
+//        // add log destinations. at least one is needed!
+//        let console = ConsoleDestination()  // log to Xcode Console
+//        console.minLevel = .debug // just log .info, .warning & .error
+//        let file = FileDestination()  // log to default swiftybeaver.log file
+//        log.addDestination(console)
+//        log.addDestination(file)
+//    }
     
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

@@ -44,10 +44,6 @@ public class CWBaseMessageController: UIViewController {
         super.viewDidLoad()
         
         setupUI()
-        
-//        let chatManager = CWChatClient.share.chatManager
-//        chatManager.addChatDelegate(self, delegateQueue: DispatchQueue.main)
-        
         loadMessageData()
     }
     
@@ -59,11 +55,6 @@ public class CWBaseMessageController: UIViewController {
             qqemoticon.type = .normal
             groupList.append(qqemoticon)
         }
-        
-//        if let liemoticon = EmoticonGroup(identifier: "cn.com.a-li") {
-//            liemoticon.type = .big
-//            groupList.append(liemoticon)
-//        }
         
         keyboard.delegate = self
         keyboard.emoticonInputView.loadData(groupList)
@@ -166,7 +157,8 @@ extension CWBaseMessageController: CWMessageCellDelegate {
             chatImageClick(message: message)
             
         default:
-            log.debug("其他类型")
+           // log.debug("其他类型")
+            print("其他类型")
         }
     }
     
@@ -176,7 +168,7 @@ extension CWBaseMessageController: CWMessageCellDelegate {
     
     /// 头像点击的回调方法
     func messageCellUserAvatarDidClick(_ userId: String) {
-        log.debug("cell头像 点击...\(userId)")
+        //log.debug("cell头像 点击...\(userId)")
 
     }
     

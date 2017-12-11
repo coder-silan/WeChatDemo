@@ -74,7 +74,6 @@
 		2E9469571FD8DDD30000DC20 /* MoreItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9469401FD8DDD30000DC20 /* MoreItemCell.swift */; };
 		2E9469731FD8DE110000DC20 /* Emoticon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E94695F1FD8DE110000DC20 /* Emoticon.swift */; };
 		2E9469751FD8DE110000DC20 /* EmoticonManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9469621FD8DE110000DC20 /* EmoticonManager.swift */; };
-		2E9469831FD8DE3B0000DC20 /* Emotion.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2E9469821FD8DE3B0000DC20 /* Emotion.bundle */; };
 		2E9469851FD8DE760000DC20 /* CWBaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9469841FD8DE760000DC20 /* CWBaseTableViewController.swift */; };
 		2E9469871FD8E43D0000DC20 /* CWBaseMessageController+Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9469861FD8E43D0000DC20 /* CWBaseMessageController+Keyboard.swift */; };
 		2E9469891FD8E52B0000DC20 /* CWChatKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9469881FD8E52A0000DC20 /* CWChatKit.swift */; };
@@ -176,7 +175,6 @@
 		2E9469401FD8DDD30000DC20 /* MoreItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreItemCell.swift; sourceTree = "<group>"; };
 		2E94695F1FD8DE110000DC20 /* Emoticon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Emoticon.swift; sourceTree = "<group>"; };
 		2E9469621FD8DE110000DC20 /* EmoticonManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonManager.swift; sourceTree = "<group>"; };
-		2E9469821FD8DE3B0000DC20 /* Emotion.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Emotion.bundle; sourceTree = "<group>"; };
 		2E9469841FD8DE760000DC20 /* CWBaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CWBaseTableViewController.swift; sourceTree = "<group>"; };
 		2E9469861FD8E43D0000DC20 /* CWBaseMessageController+Keyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CWBaseMessageController+Keyboard.swift"; sourceTree = "<group>"; };
 		2E9469881FD8E52A0000DC20 /* CWChatKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CWChatKit.swift; sourceTree = "<group>"; };
@@ -250,6 +248,7 @@
 				2E54933E1FD7F91400DB934B /* Assets.xcassets */,
 				2E54943F1FD8CC6500DB934B /* chat */,
 				2E9469251FD8DDD30000DC20 /* CWInput */,
+				2E5494441FD8CCF300DB934B /* Extension */,
 				2E9469581FD8DE110000DC20 /* Expression */,
 				2E5493401FD7F91400DB934B /* LaunchScreen.storyboard */,
 				2E5493431FD7F91400DB934B /* Info.plist */,
@@ -292,8 +291,6 @@
 		2E5494401FD8CC6E00DB934B /* helper */ = {
 			isa = PBXGroup;
 			children = (
-				2E54945D1FD8CD3B00DB934B /* Tool */,
-				2E5494441FD8CCF300DB934B /* Extension */,
 			);
 			path = helper;
 			sourceTree = "<group>";
@@ -353,17 +350,6 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
-		2E54945D1FD8CD3B00DB934B /* Tool */ = {
-			isa = PBXGroup;
-			children = (
-				2E54945E1FD8CD3B00DB934B /* ChatTimeTool.swift */,
-				2E54945F1FD8CD3B00DB934B /* CWChatConst.swift */,
-				2E5494601FD8CD3B00DB934B /* CWPlayMessageAudio.swift */,
-				2E5494611FD8CD3B00DB934B /* CWUIUtility.swift */,
-			);
-			path = Tool;
-			sourceTree = "<group>";
-		};
 		2E5494781FD8D22000DB934B /* Layout */ = {
 			isa = PBXGroup;
 			children = (
@@ -379,6 +365,10 @@
 			children = (
 				2E5494921FD8D45100DB934B /* CWTextLinePositionModifier.swift */,
 				2E5494941FD8D45800DB934B /* CWChatTextParser.swift */,
+				2E54945E1FD8CD3B00DB934B /* ChatTimeTool.swift */,
+				2E54945F1FD8CD3B00DB934B /* CWChatConst.swift */,
+				2E5494601FD8CD3B00DB934B /* CWPlayMessageAudio.swift */,
+				2E5494611FD8CD3B00DB934B /* CWUIUtility.swift */,
 			);
 			path = tool;
 			sourceTree = "<group>";
@@ -449,7 +439,6 @@
 			isa = PBXGroup;
 			children = (
 				2EBBED221FDE1D770019B7F9 /* emoticons.bundle */,
-				2E9469821FD8DE3B0000DC20 /* Emotion.bundle */,
 			);
 			path = Expression;
 			sourceTree = "<group>";
@@ -596,7 +585,6 @@
 				2E5493421FD7F91400DB934B /* LaunchScreen.storyboard in Resources */,
 				2E54949E1FD8DBE000DB934B /* chat_background.png in Resources */,
 				2E54933F1FD7F91400DB934B /* Assets.xcassets in Resources */,
-				2E9469831FD8DE3B0000DC20 /* Emotion.bundle in Resources */,
 				2E54933D1FD7F91400DB934B /* Main.storyboard in Resources */,
 				2EBBED231FDE1D770019B7F9 /* emoticons.bundle in Resources */,
 			);
